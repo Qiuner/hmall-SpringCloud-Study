@@ -5,6 +5,9 @@ spring:
     name: cart-service
   profiles:
     active: dev
+  cloud:
+    nacos:
+      server-addr: 192.168.197.130:8848 # nacos地址
   datasource:
     url: jdbc:mysql://${hm.db.host}:3306/hm-cart?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai
     driver-class-name: com.mysql.cj.jdbc.Driver
