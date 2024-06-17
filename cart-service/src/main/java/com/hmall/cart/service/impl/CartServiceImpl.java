@@ -5,6 +5,7 @@ import cn.hutool.core.util.RandomUtil;
 import cn.hutool.core.util.StrUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.hmall.cart.client.ItemClient;
 import com.hmall.cart.domain.dto.CartFormDTO;
 import com.hmall.cart.domain.dto.ItemDTO;
 import com.hmall.cart.domain.po.Cart;
@@ -33,22 +34,16 @@ import java.util.Set;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-/**
- * <p>
- * 订单详情表 服务实现类
- * </p>
- *
- * @author 虎哥
- * @since 2023-05-05
- */
+
 @Service
 @RequiredArgsConstructor
 public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements ICartService {
 
+    // 不需要这些了
+    // private final RestTemplate restTemplate;
+    // private final DiscoveryClient discoveryClient;
 
-    private final RestTemplate restTemplate;
-    private final DiscoveryClient discoveryClient;
-
+    private final ItemClient itemClient;
 
     @Override
     public void addItem2Cart(CartFormDTO cartFormDTO) {
@@ -97,36 +92,42 @@ public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements IC
         // 2.查询商品 原代码
         // List<ItemDTO> items = itemService.queryItemByIds(itemIds);
 
+        //下面事旧方法
 
         // 2.1根据服务名称获取服务实例,
-        List<ServiceInstance> instances = discoveryClient.getInstances("item-service");
+        // List<ServiceInstance> instances = discoveryClient.getInstances("item-service");
+        //
+        //
+        // if (CollUtils.isEmpty(instances)){
+        //     return;
+        // }
+        //
+        // // 2.2选择负载均衡策略 这里策略是随机生成
+        // ServiceInstance instance=instances.get(RandomUtil.randomInt(instances.size()));
+        //
+        // // 2.3使用RestTemplate发送请求
+        // ResponseEntity<List<ItemDTO>> response= restTemplate.exchange(
+        //         // 这里查询商品不再从本地数据库中查询 而是发送请求 让远程服务器接受来查询 使用上面随机策略来进行
+        //         instance.getUri()+"/items?ids={ids}",
+        //         HttpMethod.GET,
+        //         null,
+        //         new ParameterizedTypeReference<List<ItemDTO>>() {
+        //         },
+        //         Map.of("ids",CollUtils.join(itemIds,","))
+        // );
+        //
+        // // 解析响应
+        // if (!response.getStatusCode().is2xxSuccessful()){
+        //     // 查询失败
+        //     return;
+        // }
+        // //这里做转换
+        // List<ItemDTO> items =response.getBody();
 
+        // 这里是封装的调用方法
 
-        if (CollUtils.isEmpty(instances)){
-            return;
-        }
+        List<ItemDTO> items =itemClient.queryItemByIds(itemIds);
 
-        // 2.2选择负载均衡策略 这里策略是随机生成
-        ServiceInstance instance=instances.get(RandomUtil.randomInt(instances.size()));
-
-        // 2.3使用RestTemplate发送请求
-        ResponseEntity<List<ItemDTO>> response= restTemplate.exchange(
-                // 这里查询商品不再从本地数据库中查询 而是发送请求 让远程服务器接受来查询 使用上面随机策略来进行
-                instance.getUri()+"/items?ids={ids}",
-                HttpMethod.GET,
-                null,
-                new ParameterizedTypeReference<List<ItemDTO>>() {
-                },
-                Map.of("ids",CollUtils.join(itemIds,","))
-        );
-
-        // 解析响应
-        if (!response.getStatusCode().is2xxSuccessful()){
-            // 查询失败
-            return;
-        }
-        //这里做转换
-        List<ItemDTO> items =response.getBody();
 
         if (CollUtils.isEmpty(items)) {
             return;
