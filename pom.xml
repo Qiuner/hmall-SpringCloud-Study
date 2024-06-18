@@ -16,6 +16,7 @@
         <module>hm-api</module>
         <module>user-service</module>
         <module>trade-service</module>
+        <module>pay-service</module>
     </modules>
 
     <parent>
