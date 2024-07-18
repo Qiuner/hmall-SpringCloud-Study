@@ -20,7 +20,6 @@ mybatis-plus:
     db-config:
       update-strategy: not_null
       id-type: auto
-
 logging:
   level:
     com.hmall: debug
@@ -28,8 +27,6 @@ logging:
     dateformat: HH:mm:ss:SSS
   file:
     path: "logs/${spring.application.name}"
-
-
 knife4j:
   enable: true
   openapi:
@@ -45,3 +42,6 @@ knife4j:
         api-rule: package
         api-rule-resources:
           - com.hmall.cart.controller
+feign:
+  okhttp:
+    enabled: true # 开启OKHttp功能
