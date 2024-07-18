@@ -28,7 +28,7 @@ knife4j:
   enable: true
   openapi:
     title: 商品服务接口文档
-    description: "信息"
+    description: "商品服务接口文档"
     email: zhanghuyi@itcast.cn
     concat: Qiuner
     url: https://www.itcast.cn

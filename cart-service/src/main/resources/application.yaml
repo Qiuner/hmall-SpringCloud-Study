@@ -17,6 +17,7 @@ mybatis-plus:
     db-config:
       update-strategy: not_null
       id-type: auto
+
 logging:
   level:
     com.hmall: debug
@@ -24,13 +25,15 @@ logging:
     dateformat: HH:mm:ss:SSS
   file:
     path: "logs/${spring.application.name}"
+
+
 knife4j:
   enable: true
   openapi:
-    title: 商品服务接口文档
-    description: "信息"
+    title: 黑马商城购物车接口文档
+    description: "黑马商城购物车接口文档"
     email: zhanghuyi@itcast.cn
-    concat: 虎哥
+    concat: Qiuner
     url: https://www.itcast.cn
     version: v1.0.0
     group:
