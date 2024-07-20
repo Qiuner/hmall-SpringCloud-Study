@@ -1,0 +1,2 @@
+2024/07/19 15:38:02 [error] 28852#30188: *1 directory index of "D:\Code\hmall-SpringCloud-Study\hmall-nginx/html/hmall-admin/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:18081"
+2024/07/19 15:38:17 [error] 28852#30188: *1 directory index of "D:\Code\hmall-SpringCloud-Study\hmall-nginx/html/hmall-admin/" is forbidden, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:18081"
