@@ -31,6 +31,7 @@ public class AuthGlobalFilter implements GlobalFilter, Ordered {
 
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
+        System.out.print("这是AuthGlobalFilter过滤器");
         // 1.获取Request
         ServerHttpRequest request = exchange.getRequest();
         // 2.判断是否不需要拦截
@@ -46,19 +47,26 @@ public class AuthGlobalFilter implements GlobalFilter, Ordered {
         }
         // 4.校验并解析token
         Long userId = null;
+
+
         try {
             userId = jwtTool.parseToken(token);
+            System.out.println("令牌解析成功, userId: " + userId);
+
         } catch (UnauthorizedException e) {
             // 如果无效，拦截
+            System.out.println("没有成功解析token");
             ServerHttpResponse response = exchange.getResponse();
             response.setRawStatusCode(401);
             return response.setComplete();
         }
-
-        // TODO 5.如果有效，传递用户信息
-        System.out.println("userId = " + userId);
+        // 给清透头添加信息 信息为user的id，使用userInfo取出来
+        String userInfo=userId.toString();
+        ServerWebExchange swe = exchange.mutate()
+                .request(b -> b.header("user-info",userInfo))
+                .build();
         // 6.放行
-        return chain.filter(exchange);
+        return chain.filter(swe);
     }
 
     private boolean isExclude(String antPath) {

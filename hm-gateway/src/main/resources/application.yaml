@@ -30,9 +30,9 @@ spring:
           uri: lb://pay-service
           predicates:
             - Path=/pay-orders/**
-      default-filters:
-        - AddRequestHeader=truth, i am very handsome
-        - PrintAny # 此处直接以自定义的GatewayFilterFactory类名称前缀类声明过滤器
+#      default-filters:
+#        - AddRequestHeader=truth, i am very handsome
+#        - PrintAny # 此处直接以自定义的GatewayFilterFactory类名称前缀类声明过滤器
 hm:
   jwt:
     location: classpath:hmall.jks
