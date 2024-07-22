@@ -1,0 +1,159 @@
+08:40:09:330 DEBUG 22176 --- [http-nio-8084-exec-9] c.h.user.mapper.UserMapper.selectOne     : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+08:40:09:334 DEBUG 22176 --- [http-nio-8084-exec-9] c.h.user.mapper.UserMapper.selectOne     : ==> Parameters: jack(String)
+08:40:09:335 DEBUG 22176 --- [http-nio-8084-exec-9] c.h.user.mapper.UserMapper.selectOne     : <==      Total: 1
+08:40:09:490 DEBUG 22176 --- [http-nio-8084-exec-2] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+08:40:09:491 DEBUG 22176 --- [http-nio-8084-exec-2] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: null
+08:40:09:493 DEBUG 22176 --- [http-nio-8084-exec-2] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 0
+09:18:24:196 DEBUG 22176 --- [http-nio-8084-exec-5] c.h.user.mapper.UserMapper.selectOne     : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+09:18:24:196 DEBUG 22176 --- [http-nio-8084-exec-5] c.h.user.mapper.UserMapper.selectOne     : ==> Parameters: jack(String)
+09:18:24:198 DEBUG 22176 --- [http-nio-8084-exec-5] c.h.user.mapper.UserMapper.selectOne     : <==      Total: 1
+09:43:58:814 DEBUG 22176 --- [http-nio-8084-exec-7] c.h.user.mapper.UserMapper.selectOne     : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+09:43:58:815 DEBUG 22176 --- [http-nio-8084-exec-7] c.h.user.mapper.UserMapper.selectOne     : ==> Parameters: jack(String)
+09:43:58:816 DEBUG 22176 --- [http-nio-8084-exec-7] c.h.user.mapper.UserMapper.selectOne     : <==      Total: 1
+11:06:26:361 DEBUG 22176 --- [http-nio-8084-exec-3] c.h.user.mapper.UserMapper.selectOne     : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+11:06:26:361 DEBUG 22176 --- [http-nio-8084-exec-3] c.h.user.mapper.UserMapper.selectOne     : ==> Parameters: jack(String)
+11:06:26:372 DEBUG 22176 --- [http-nio-8084-exec-3] c.h.user.mapper.UserMapper.selectOne     : <==      Total: 1
+11:09:53:836 DEBUG 22176 --- [http-nio-8084-exec-6] c.h.user.mapper.UserMapper.selectOne     : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+11:09:53:836 DEBUG 22176 --- [http-nio-8084-exec-6] c.h.user.mapper.UserMapper.selectOne     : ==> Parameters: jack(String)
+11:09:53:838 DEBUG 22176 --- [http-nio-8084-exec-6] c.h.user.mapper.UserMapper.selectOne     : <==      Total: 1
+11:11:10:958 DEBUG 22176 --- [http-nio-8084-exec-2] c.h.user.mapper.UserMapper.selectOne     : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+11:11:10:959 DEBUG 22176 --- [http-nio-8084-exec-2] c.h.user.mapper.UserMapper.selectOne     : ==> Parameters: jack(String)
+11:11:10:960 DEBUG 22176 --- [http-nio-8084-exec-2] c.h.user.mapper.UserMapper.selectOne     : <==      Total: 1
+13:51:36:567 DEBUG 22176 --- [http-nio-8084-exec-5] c.h.user.mapper.UserMapper.selectOne     : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+13:51:36:567 DEBUG 22176 --- [http-nio-8084-exec-5] c.h.user.mapper.UserMapper.selectOne     : ==> Parameters: jack(String)
+13:51:36:567 DEBUG 22176 --- [http-nio-8084-exec-5] c.h.user.mapper.UserMapper.selectOne     : <==      Total: 1
+13:54:50:426 DEBUG 22176 --- [http-nio-8084-exec-7] c.h.user.mapper.UserMapper.selectOne     : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+13:54:50:427 DEBUG 22176 --- [http-nio-8084-exec-7] c.h.user.mapper.UserMapper.selectOne     : ==> Parameters: jack(String)
+13:54:50:428 DEBUG 22176 --- [http-nio-8084-exec-7] c.h.user.mapper.UserMapper.selectOne     : <==      Total: 1
+13:55:31:442 DEBUG 22176 --- [http-nio-8084-exec-10] c.h.user.mapper.UserMapper.selectOne     : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+13:55:31:443 DEBUG 22176 --- [http-nio-8084-exec-10] c.h.user.mapper.UserMapper.selectOne     : ==> Parameters: jack(String)
+13:55:31:445 DEBUG 22176 --- [http-nio-8084-exec-10] c.h.user.mapper.UserMapper.selectOne     : <==      Total: 1
+13:55:44:439 DEBUG 22176 --- [http-nio-8084-exec-3] c.h.user.mapper.UserMapper.selectOne     : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+13:55:44:439 DEBUG 22176 --- [http-nio-8084-exec-3] c.h.user.mapper.UserMapper.selectOne     : ==> Parameters: Rose(String)
+13:55:44:442 DEBUG 22176 --- [http-nio-8084-exec-3] c.h.user.mapper.UserMapper.selectOne     : <==      Total: 1
+14:04:09:798 DEBUG 22176 --- [http-nio-8084-exec-6] c.h.user.mapper.UserMapper.selectOne     : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+14:04:09:799 DEBUG 22176 --- [http-nio-8084-exec-6] c.h.user.mapper.UserMapper.selectOne     : ==> Parameters: jack(String)
+14:04:09:800 DEBUG 22176 --- [http-nio-8084-exec-6] c.h.user.mapper.UserMapper.selectOne     : <==      Total: 1
+14:07:02:701 DEBUG 22176 --- [http-nio-8084-exec-2] c.h.user.mapper.UserMapper.selectOne     : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+14:07:02:701 DEBUG 22176 --- [http-nio-8084-exec-2] c.h.user.mapper.UserMapper.selectOne     : ==> Parameters: jack(String)
+14:07:02:702 DEBUG 22176 --- [http-nio-8084-exec-2] c.h.user.mapper.UserMapper.selectOne     : <==      Total: 1
+14:10:46:661  WARN 22176 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+14:10:46:661  WARN 22176 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+14:10:46:661  WARN 22176 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+14:10:46:664  WARN 22176 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+14:10:47:363  INFO 22176 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+14:10:47:364  INFO 22176 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+14:10:47:695  INFO 22176 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+14:10:47:695  INFO 22176 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@195b4871[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+14:10:47:695  INFO 22176 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1721435656858_192.168.200.1_14299
+14:10:47:698  INFO 22176 --- [nacos-grpc-client-executor-38593] c.a.n.c.remote.client.grpc.GrpcClient    : [1721435656858_192.168.200.1_14299]Ignore complete event,isRunning:false,isAbandon=false
+14:10:47:701  INFO 22176 --- [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@4837cefb[Running, pool size = 6, active threads = 0, queued tasks = 0, completed tasks = 38594]
+14:10:47:706  INFO 22176 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+14:10:47:722  INFO 22176 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+14:11:01:443  INFO 29392 --- [main] com.hmall.user.UserApplication           : Starting UserApplication using Java 11.0.23 on Qiuner with PID 29392 (D:\Code\hmall-SpringCloud-Study\user-service\target\classes started by Qiuner in D:\Code\hmall-SpringCloud-Study)
+14:11:01:444 DEBUG 29392 --- [main] com.hmall.user.UserApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+14:11:01:444  INFO 29392 --- [main] com.hmall.user.UserApplication           : The following 1 profile is active: "local"
+14:11:01:981  INFO 29392 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ff985797-ecca-3d61-aa74-21b5ec2e49df
+14:11:02:137  INFO 29392 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
+14:11:02:142  INFO 29392 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+14:11:02:142  INFO 29392 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+14:11:02:208  INFO 29392 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+14:11:02:208  INFO 29392 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 739 ms
+14:11:05:515  INFO 29392 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+14:11:06:274  INFO 29392 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 9e111f2c-a54a-4411-8e72-5df7c4c0263c
+14:11:06:295  INFO 29392 --- [main] org.reflections.Reflections              : Reflections took 11 ms to scan 1 urls, producing 3 keys and 6 values 
+14:11:06:307  INFO 29392 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 4 keys and 9 values 
+14:11:06:313  INFO 29392 --- [main] org.reflections.Reflections              : Reflections took 5 ms to scan 1 urls, producing 3 keys and 10 values 
+14:11:06:314  WARN 29392 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+14:11:06:319  INFO 29392 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 1 keys and 5 values 
+14:11:06:326  INFO 29392 --- [main] org.reflections.Reflections              : Reflections took 6 ms to scan 1 urls, producing 1 keys and 7 values 
+14:11:06:333  INFO 29392 --- [main] org.reflections.Reflections              : Reflections took 6 ms to scan 1 urls, producing 2 keys and 8 values 
+14:11:06:335  WARN 29392 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+14:11:06:335  INFO 29392 --- [main] com.alibaba.nacos.common.remote.client   : [9e111f2c-a54a-4411-8e72-5df7c4c0263c] RpcClient init label, labels = {module=naming, source=sdk}
+14:11:06:336  INFO 29392 --- [main] com.alibaba.nacos.common.remote.client   : [9e111f2c-a54a-4411-8e72-5df7c4c0263c] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+14:11:06:336  INFO 29392 --- [main] com.alibaba.nacos.common.remote.client   : [9e111f2c-a54a-4411-8e72-5df7c4c0263c] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+14:11:06:337  INFO 29392 --- [main] com.alibaba.nacos.common.remote.client   : [9e111f2c-a54a-4411-8e72-5df7c4c0263c] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+14:11:06:337  INFO 29392 --- [main] com.alibaba.nacos.common.remote.client   : [9e111f2c-a54a-4411-8e72-5df7c4c0263c] Try to connect to server on start up, server: {serverIp = '192.168.200.128', server main port = 8848}
+14:11:08:137  INFO 29392 --- [main] com.alibaba.nacos.common.remote.client   : [9e111f2c-a54a-4411-8e72-5df7c4c0263c] Success to connect to server [192.168.200.128:8848] on start up, connectionId = 1721628666866_192.168.200.1_12716
+14:11:08:137  INFO 29392 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [9e111f2c-a54a-4411-8e72-5df7c4c0263c] Notify connected event to listeners.
+14:11:08:138  INFO 29392 --- [main] com.alibaba.nacos.common.remote.client   : [9e111f2c-a54a-4411-8e72-5df7c4c0263c] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+14:11:08:138  INFO 29392 --- [main] com.alibaba.nacos.common.remote.client   : [9e111f2c-a54a-4411-8e72-5df7c4c0263c] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$950/0x0000000800714040
+14:11:08:167  INFO 29392 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8084 (http) with context path ''
+14:11:08:173  INFO 29392 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP user-service 10.196.122.166:8084 register finished
+14:11:08:722  INFO 29392 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [9e111f2c-a54a-4411-8e72-5df7c4c0263c] Receive server push request, request = NotifySubscriberRequest, requestId = 102
+14:11:08:725  INFO 29392 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [9e111f2c-a54a-4411-8e72-5df7c4c0263c] Ack server push request, request = NotifySubscriberRequest, requestId = 102
+14:11:08:753  INFO 29392 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+14:11:08:755  INFO 29392 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+14:11:08:764  INFO 29392 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+14:11:08:810  INFO 29392 --- [main] com.hmall.user.UserApplication           : Started UserApplication in 8.37 seconds (JVM running for 9.262)
+14:12:30:523  INFO 29392 --- [http-nio-8084-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:12:30:524  INFO 29392 --- [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+14:12:30:524  INFO 29392 --- [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+14:12:30:600  INFO 29392 --- [http-nio-8084-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+14:12:30:705  INFO 29392 --- [http-nio-8084-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+14:12:30:707 DEBUG 29392 --- [http-nio-8084-exec-1] c.h.user.mapper.UserMapper.selectOne     : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+14:12:30:717 DEBUG 29392 --- [http-nio-8084-exec-1] c.h.user.mapper.UserMapper.selectOne     : ==> Parameters: jack(String)
+14:12:30:728 DEBUG 29392 --- [http-nio-8084-exec-1] c.h.user.mapper.UserMapper.selectOne     : <==      Total: 1
+14:14:43:182 DEBUG 29392 --- [http-nio-8084-exec-3] c.h.user.mapper.UserMapper.selectOne     : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+14:14:43:182 DEBUG 29392 --- [http-nio-8084-exec-3] c.h.user.mapper.UserMapper.selectOne     : ==> Parameters: jack(String)
+14:14:43:183 DEBUG 29392 --- [http-nio-8084-exec-3] c.h.user.mapper.UserMapper.selectOne     : <==      Total: 1
+14:15:53:761  WARN 29392 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+14:15:53:761  WARN 29392 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+14:15:53:761  WARN 29392 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+14:15:53:761  WARN 29392 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+14:15:54:397  INFO 29392 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+14:15:54:399  INFO 29392 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+14:15:54:724  INFO 29392 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+14:15:54:725  INFO 29392 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@2c6e6c0c[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+14:15:54:725  INFO 29392 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1721628666866_192.168.200.1_12716
+14:15:54:726  INFO 29392 --- [nacos-grpc-client-executor-74] c.a.n.c.remote.client.grpc.GrpcClient    : [1721628666866_192.168.200.1_12716]Ignore complete event,isRunning:false,isAbandon=false
+14:15:54:727  INFO 29392 --- [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@582f8d54[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 75]
+14:15:54:731  INFO 29392 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+14:15:54:743  INFO 29392 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+14:16:06:974  INFO 32336 --- [main] com.hmall.user.UserApplication           : Starting UserApplication using Java 11.0.23 on Qiuner with PID 32336 (D:\Code\hmall-SpringCloud-Study\user-service\target\classes started by Qiuner in D:\Code\hmall-SpringCloud-Study)
+14:16:06:976 DEBUG 32336 --- [main] com.hmall.user.UserApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+14:16:06:976  INFO 32336 --- [main] com.hmall.user.UserApplication           : The following 1 profile is active: "local"
+14:16:07:484  INFO 32336 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c84af717-a19d-34c5-ba5a-cf2bbbf28a33
+14:16:07:663  INFO 32336 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
+14:16:07:667  INFO 32336 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+14:16:07:667  INFO 32336 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+14:16:07:737  INFO 32336 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+14:16:07:737  INFO 32336 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 738 ms
+14:16:11:395  INFO 32336 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+14:16:12:198  INFO 32336 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 8f7bd0e9-2ec4-438b-831a-b765279bfc48
+14:16:12:219  INFO 32336 --- [main] org.reflections.Reflections              : Reflections took 11 ms to scan 1 urls, producing 3 keys and 6 values 
+14:16:12:231  INFO 32336 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 4 keys and 9 values 
+14:16:12:236  INFO 32336 --- [main] org.reflections.Reflections              : Reflections took 3 ms to scan 1 urls, producing 3 keys and 10 values 
+14:16:12:238  WARN 32336 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+14:16:12:241  INFO 32336 --- [main] org.reflections.Reflections              : Reflections took 3 ms to scan 1 urls, producing 1 keys and 5 values 
+14:16:12:247  INFO 32336 --- [main] org.reflections.Reflections              : Reflections took 5 ms to scan 1 urls, producing 1 keys and 7 values 
+14:16:12:251  INFO 32336 --- [main] org.reflections.Reflections              : Reflections took 3 ms to scan 1 urls, producing 2 keys and 8 values 
+14:16:12:252  WARN 32336 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+14:16:12:253  INFO 32336 --- [main] com.alibaba.nacos.common.remote.client   : [8f7bd0e9-2ec4-438b-831a-b765279bfc48] RpcClient init label, labels = {module=naming, source=sdk}
+14:16:12:254  INFO 32336 --- [main] com.alibaba.nacos.common.remote.client   : [8f7bd0e9-2ec4-438b-831a-b765279bfc48] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+14:16:12:254  INFO 32336 --- [main] com.alibaba.nacos.common.remote.client   : [8f7bd0e9-2ec4-438b-831a-b765279bfc48] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+14:16:12:254  INFO 32336 --- [main] com.alibaba.nacos.common.remote.client   : [8f7bd0e9-2ec4-438b-831a-b765279bfc48] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+14:16:12:255  INFO 32336 --- [main] com.alibaba.nacos.common.remote.client   : [8f7bd0e9-2ec4-438b-831a-b765279bfc48] Try to connect to server on start up, server: {serverIp = '192.168.200.128', server main port = 8848}
+14:16:14:282  INFO 32336 --- [main] com.alibaba.nacos.common.remote.client   : [8f7bd0e9-2ec4-438b-831a-b765279bfc48] Success to connect to server [192.168.200.128:8848] on start up, connectionId = 1721628973001_192.168.200.1_14320
+14:16:14:282  INFO 32336 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [8f7bd0e9-2ec4-438b-831a-b765279bfc48] Notify connected event to listeners.
+14:16:14:284  INFO 32336 --- [main] com.alibaba.nacos.common.remote.client   : [8f7bd0e9-2ec4-438b-831a-b765279bfc48] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+14:16:14:284  INFO 32336 --- [main] com.alibaba.nacos.common.remote.client   : [8f7bd0e9-2ec4-438b-831a-b765279bfc48] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$953/0x0000000800712040
+14:16:14:316  INFO 32336 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8084 (http) with context path ''
+14:16:14:323  INFO 32336 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP user-service 10.196.122.166:8084 register finished
+14:16:14:826  INFO 32336 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [8f7bd0e9-2ec4-438b-831a-b765279bfc48] Receive server push request, request = NotifySubscriberRequest, requestId = 119
+14:16:14:829  INFO 32336 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [8f7bd0e9-2ec4-438b-831a-b765279bfc48] Ack server push request, request = NotifySubscriberRequest, requestId = 119
+14:16:14:920  INFO 32336 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+14:16:14:921  INFO 32336 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+14:16:14:931  INFO 32336 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+14:16:14:975  INFO 32336 --- [main] com.hmall.user.UserApplication           : Started UserApplication in 9.521 seconds (JVM running for 10.514)
+14:31:22:403  INFO 32336 --- [http-nio-8084-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:31:22:404  INFO 32336 --- [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+14:31:22:405  INFO 32336 --- [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+14:31:22:491  INFO 32336 --- [http-nio-8084-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+14:31:22:609  INFO 32336 --- [http-nio-8084-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+14:31:22:612 DEBUG 32336 --- [http-nio-8084-exec-1] c.h.user.mapper.UserMapper.selectOne     : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+14:31:22:623 DEBUG 32336 --- [http-nio-8084-exec-1] c.h.user.mapper.UserMapper.selectOne     : ==> Parameters: Rose(String)
+14:31:22:635 DEBUG 32336 --- [http-nio-8084-exec-1] c.h.user.mapper.UserMapper.selectOne     : <==      Total: 1
+15:28:33:053 DEBUG 32336 --- [http-nio-8084-exec-3] c.h.user.mapper.UserMapper.selectOne     : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+15:28:33:053 DEBUG 32336 --- [http-nio-8084-exec-3] c.h.user.mapper.UserMapper.selectOne     : ==> Parameters: jack(String)
+15:28:33:057 DEBUG 32336 --- [http-nio-8084-exec-3] c.h.user.mapper.UserMapper.selectOne     : <==      Total: 1
