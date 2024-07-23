@@ -81,6 +81,7 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
 
         // 3.清理购物车商品
         // cartService.removeByItemIds(itemIds);
+        System.out.println("开始清理购物车商品 itemIds的值是"+itemIds);
         cartClient.deleteCartItemByIds(itemIds);
 
 

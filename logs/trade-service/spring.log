@@ -1,100 +1,725 @@
-14:10:46:658  WARN 24596 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
-14:10:46:658  WARN 24596 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
-14:10:46:670  WARN 24596 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
-14:10:46:671  WARN 24596 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
-14:10:47:378  INFO 24596 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
-14:10:47:380  INFO 24596 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
-14:10:47:710  INFO 24596 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
-14:10:47:710  INFO 24596 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@35dab9ab[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
-14:10:47:710  INFO 24596 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1721439990355_192.168.200.1_4215
-14:10:47:712  INFO 24596 --- [nacos-grpc-client-executor-37713] c.a.n.c.remote.client.grpc.GrpcClient    : [1721439990355_192.168.200.1_4215]Ignore complete event,isRunning:false,isAbandon=false
-14:10:47:718  INFO 24596 --- [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@3610a3a1[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 37714]
-14:10:47:729  INFO 24596 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-14:10:47:740  INFO 24596 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-14:11:03:785  INFO 30728 --- [main] com.hmall.trade.TradeApplication         : Starting TradeApplication using Java 11.0.23 on Qiuner with PID 30728 (D:\Code\hmall-SpringCloud-Study\trade-service\target\classes started by Qiuner in D:\Code\hmall-SpringCloud-Study)
-14:11:03:786 DEBUG 30728 --- [main] com.hmall.trade.TradeApplication         : Running with Spring Boot v2.7.12, Spring v5.3.27
-14:11:03:786  INFO 30728 --- [main] com.hmall.trade.TradeApplication         : The following 1 profile is active: "local"
-14:11:04:307  INFO 30728 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d02af605-f4ee-3694-b006-0b7eb6514b8e
-14:11:04:476  INFO 30728 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
-14:11:04:480  INFO 30728 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-14:11:04:480  INFO 30728 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
-14:11:04:547  INFO 30728 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-14:11:04:547  INFO 30728 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 735 ms
-14:11:06:464  INFO 30728 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
-14:11:06:497  INFO 30728 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'cart-service' URL not provided. Will try picking an instance via load-balancing.
-14:11:07:305  INFO 30728 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-14:11:08:053  INFO 30728 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 42b7bd5f-26ae-4edd-8307-47869b5ca6d8
-14:11:08:071  INFO 30728 --- [main] org.reflections.Reflections              : Reflections took 10 ms to scan 1 urls, producing 3 keys and 6 values 
-14:11:08:084  INFO 30728 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 4 keys and 9 values 
-14:11:08:089  INFO 30728 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 3 keys and 10 values 
-14:11:08:090  WARN 30728 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
-14:11:08:094  INFO 30728 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 1 keys and 5 values 
-14:11:08:098  INFO 30728 --- [main] org.reflections.Reflections              : Reflections took 3 ms to scan 1 urls, producing 1 keys and 7 values 
-14:11:08:104  INFO 30728 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 2 keys and 8 values 
-14:11:08:104  WARN 30728 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
-14:11:08:105  INFO 30728 --- [main] com.alibaba.nacos.common.remote.client   : [42b7bd5f-26ae-4edd-8307-47869b5ca6d8] RpcClient init label, labels = {module=naming, source=sdk}
-14:11:08:106  INFO 30728 --- [main] com.alibaba.nacos.common.remote.client   : [42b7bd5f-26ae-4edd-8307-47869b5ca6d8] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
-14:11:08:106  INFO 30728 --- [main] com.alibaba.nacos.common.remote.client   : [42b7bd5f-26ae-4edd-8307-47869b5ca6d8] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
-14:11:08:106  INFO 30728 --- [main] com.alibaba.nacos.common.remote.client   : [42b7bd5f-26ae-4edd-8307-47869b5ca6d8] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
-14:11:08:108  INFO 30728 --- [main] com.alibaba.nacos.common.remote.client   : [42b7bd5f-26ae-4edd-8307-47869b5ca6d8] Try to connect to server on start up, server: {serverIp = '192.168.200.128', server main port = 8848}
-14:11:09:891  INFO 30728 --- [main] com.alibaba.nacos.common.remote.client   : [42b7bd5f-26ae-4edd-8307-47869b5ca6d8] Success to connect to server [192.168.200.128:8848] on start up, connectionId = 1721628668615_192.168.200.1_12849
-14:11:09:891  INFO 30728 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [42b7bd5f-26ae-4edd-8307-47869b5ca6d8] Notify connected event to listeners.
-14:11:09:892  INFO 30728 --- [main] com.alibaba.nacos.common.remote.client   : [42b7bd5f-26ae-4edd-8307-47869b5ca6d8] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
-14:11:09:892  INFO 30728 --- [main] com.alibaba.nacos.common.remote.client   : [42b7bd5f-26ae-4edd-8307-47869b5ca6d8] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$971/0x0000000800747c40
-14:11:09:921  INFO 30728 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
-14:11:09:928  INFO 30728 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP trade-service 10.196.122.166:8085 register finished
-14:11:10:431  INFO 30728 --- [nacos-grpc-client-executor-10] com.alibaba.nacos.common.remote.client   : [42b7bd5f-26ae-4edd-8307-47869b5ca6d8] Receive server push request, request = NotifySubscriberRequest, requestId = 103
-14:11:10:433  INFO 30728 --- [nacos-grpc-client-executor-10] com.alibaba.nacos.common.remote.client   : [42b7bd5f-26ae-4edd-8307-47869b5ca6d8] Ack server push request, request = NotifySubscriberRequest, requestId = 103
-14:11:10:461  INFO 30728 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
-14:11:10:462  INFO 30728 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-14:11:10:472  INFO 30728 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-14:11:10:512  INFO 30728 --- [main] com.hmall.trade.TradeApplication         : Started TradeApplication in 7.884 seconds (JVM running for 8.767)
-14:15:53:767  WARN 30728 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
-14:15:53:767  WARN 30728 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
-14:15:53:767  WARN 30728 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
-14:15:53:767  WARN 30728 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
-14:15:54:401  INFO 30728 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
-14:15:54:405  INFO 30728 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
-14:15:54:724  INFO 30728 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
-14:15:54:724  INFO 30728 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@2601f6b1[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
-14:15:54:725  INFO 30728 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1721628668615_192.168.200.1_12849
-14:15:54:726  INFO 30728 --- [nacos-grpc-client-executor-76] c.a.n.c.remote.client.grpc.GrpcClient    : [1721628668615_192.168.200.1_12849]Ignore complete event,isRunning:false,isAbandon=false
-14:15:54:728  INFO 30728 --- [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@562aa788[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 77]
-14:16:08:949  INFO 23264 --- [main] com.hmall.trade.TradeApplication         : Starting TradeApplication using Java 11.0.23 on Qiuner with PID 23264 (D:\Code\hmall-SpringCloud-Study\trade-service\target\classes started by Qiuner in D:\Code\hmall-SpringCloud-Study)
-14:16:08:950 DEBUG 23264 --- [main] com.hmall.trade.TradeApplication         : Running with Spring Boot v2.7.12, Spring v5.3.27
-14:16:08:950  INFO 23264 --- [main] com.hmall.trade.TradeApplication         : The following 1 profile is active: "local"
-14:16:09:473  INFO 23264 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7cc6a128-8cf8-393f-aefa-c8ab3d2f2feb
-14:16:09:644  INFO 23264 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
-14:16:09:649  INFO 23264 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-14:16:09:649  INFO 23264 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
-14:16:09:714  INFO 23264 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-14:16:09:714  INFO 23264 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 738 ms
-14:16:11:891  INFO 23264 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
-14:16:11:923  INFO 23264 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'cart-service' URL not provided. Will try picking an instance via load-balancing.
-14:16:12:866  INFO 23264 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-14:16:13:633  INFO 23264 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of e99702fd-a41a-4ece-9a97-f5aba7cfe7ac
-14:16:13:653  INFO 23264 --- [main] org.reflections.Reflections              : Reflections took 11 ms to scan 1 urls, producing 3 keys and 6 values 
-14:16:13:664  INFO 23264 --- [main] org.reflections.Reflections              : Reflections took 5 ms to scan 1 urls, producing 4 keys and 9 values 
-14:16:13:669  INFO 23264 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 3 keys and 10 values 
-14:16:13:671  WARN 23264 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
-14:16:13:675  INFO 23264 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 1 keys and 5 values 
-14:16:13:679  INFO 23264 --- [main] org.reflections.Reflections              : Reflections took 3 ms to scan 1 urls, producing 1 keys and 7 values 
-14:16:13:685  INFO 23264 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 2 keys and 8 values 
-14:16:13:685  WARN 23264 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
-14:16:13:686  INFO 23264 --- [main] com.alibaba.nacos.common.remote.client   : [e99702fd-a41a-4ece-9a97-f5aba7cfe7ac] RpcClient init label, labels = {module=naming, source=sdk}
-14:16:13:687  INFO 23264 --- [main] com.alibaba.nacos.common.remote.client   : [e99702fd-a41a-4ece-9a97-f5aba7cfe7ac] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
-14:16:13:687  INFO 23264 --- [main] com.alibaba.nacos.common.remote.client   : [e99702fd-a41a-4ece-9a97-f5aba7cfe7ac] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
-14:16:13:687  INFO 23264 --- [main] com.alibaba.nacos.common.remote.client   : [e99702fd-a41a-4ece-9a97-f5aba7cfe7ac] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
-14:16:13:688  INFO 23264 --- [main] com.alibaba.nacos.common.remote.client   : [e99702fd-a41a-4ece-9a97-f5aba7cfe7ac] Try to connect to server on start up, server: {serverIp = '192.168.200.128', server main port = 8848}
-14:16:15:607  INFO 23264 --- [main] com.alibaba.nacos.common.remote.client   : [e99702fd-a41a-4ece-9a97-f5aba7cfe7ac] Success to connect to server [192.168.200.128:8848] on start up, connectionId = 1721628974321_192.168.200.1_14326
-14:16:15:607  INFO 23264 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [e99702fd-a41a-4ece-9a97-f5aba7cfe7ac] Notify connected event to listeners.
-14:16:15:608  INFO 23264 --- [main] com.alibaba.nacos.common.remote.client   : [e99702fd-a41a-4ece-9a97-f5aba7cfe7ac] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
-14:16:15:609  INFO 23264 --- [main] com.alibaba.nacos.common.remote.client   : [e99702fd-a41a-4ece-9a97-f5aba7cfe7ac] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$974/0x0000000800747440
-14:16:15:639  INFO 23264 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
-14:16:15:646  INFO 23264 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP trade-service 10.196.122.166:8085 register finished
-14:16:16:133  INFO 23264 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [e99702fd-a41a-4ece-9a97-f5aba7cfe7ac] Receive server push request, request = NotifySubscriberRequest, requestId = 120
-14:16:16:135  INFO 23264 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [e99702fd-a41a-4ece-9a97-f5aba7cfe7ac] Ack server push request, request = NotifySubscriberRequest, requestId = 120
-14:16:16:201  INFO 23264 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
-14:16:16:202  INFO 23264 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-14:16:16:213  INFO 23264 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-14:16:16:258  INFO 23264 --- [main] com.hmall.trade.TradeApplication         : Started TradeApplication in 8.589 seconds (JVM running for 9.569)
+09:08:58:599  WARN 28108 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+09:08:58:599  WARN 28108 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+09:08:58:604  WARN 28108 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+09:08:58:605  WARN 28108 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+09:08:58:949  INFO 28108 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+09:08:58:951  INFO 28108 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+09:08:59:283  INFO 28108 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+09:08:59:283  INFO 28108 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@332183b5[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+09:08:59:283  INFO 28108 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1721657383493_192.168.200.1_10993
+09:08:59:284  INFO 28108 --- [nacos-grpc-client-executor-8606] c.a.n.c.remote.client.grpc.GrpcClient    : [1721657383493_192.168.200.1_10993]Ignore complete event,isRunning:false,isAbandon=false
+09:08:59:287  INFO 28108 --- [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@36ada28e[Running, pool size = 4, active threads = 0, queued tasks = 0, completed tasks = 8607]
+09:08:59:297  INFO 28108 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+09:08:59:307  INFO 28108 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+09:09:03:162  INFO 43300 --- [main] com.hmall.trade.TradeApplication         : Starting TradeApplication using Java 11.0.23 on Qiuner with PID 43300 (D:\Code\hmall-SpringCloud-Study\trade-service\target\classes started by Qiuner in D:\Code\hmall-SpringCloud-Study)
+09:09:03:163 DEBUG 43300 --- [main] com.hmall.trade.TradeApplication         : Running with Spring Boot v2.7.12, Spring v5.3.27
+09:09:03:163  INFO 43300 --- [main] com.hmall.trade.TradeApplication         : The following 1 profile is active: "local"
+09:09:03:621  INFO 43300 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7cc6a128-8cf8-393f-aefa-c8ab3d2f2feb
+09:09:03:766  INFO 43300 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+09:09:03:771  INFO 43300 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+09:09:03:771  INFO 43300 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+09:09:03:830  INFO 43300 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+09:09:03:831  INFO 43300 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 645 ms
+09:09:05:114  INFO 43300 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+09:09:05:144  INFO 43300 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'cart-service' URL not provided. Will try picking an instance via load-balancing.
+09:09:05:813  INFO 43300 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+09:09:06:380  INFO 43300 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 3a78bb92-7e12-471b-9e31-1e419c1da001
+09:09:06:399  INFO 43300 --- [main] org.reflections.Reflections              : Reflections took 11 ms to scan 1 urls, producing 3 keys and 6 values 
+09:09:06:409  INFO 43300 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 4 keys and 9 values 
+09:09:06:415  INFO 43300 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 3 keys and 10 values 
+09:09:06:416  WARN 43300 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+09:09:06:419  INFO 43300 --- [main] org.reflections.Reflections              : Reflections took 3 ms to scan 1 urls, producing 1 keys and 5 values 
+09:09:06:424  INFO 43300 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 1 keys and 7 values 
+09:09:06:430  INFO 43300 --- [main] org.reflections.Reflections              : Reflections took 6 ms to scan 1 urls, producing 2 keys and 8 values 
+09:09:06:431  WARN 43300 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+09:09:06:431  INFO 43300 --- [main] com.alibaba.nacos.common.remote.client   : [3a78bb92-7e12-471b-9e31-1e419c1da001] RpcClient init label, labels = {module=naming, source=sdk}
+09:09:06:432  INFO 43300 --- [main] com.alibaba.nacos.common.remote.client   : [3a78bb92-7e12-471b-9e31-1e419c1da001] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+09:09:06:432  INFO 43300 --- [main] com.alibaba.nacos.common.remote.client   : [3a78bb92-7e12-471b-9e31-1e419c1da001] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+09:09:06:433  INFO 43300 --- [main] com.alibaba.nacos.common.remote.client   : [3a78bb92-7e12-471b-9e31-1e419c1da001] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+09:09:06:434  INFO 43300 --- [main] com.alibaba.nacos.common.remote.client   : [3a78bb92-7e12-471b-9e31-1e419c1da001] Try to connect to server on start up, server: {serverIp = '192.168.200.128', server main port = 8848}
+09:09:07:865  INFO 43300 --- [main] com.alibaba.nacos.common.remote.client   : [3a78bb92-7e12-471b-9e31-1e419c1da001] Success to connect to server [192.168.200.128:8848] on start up, connectionId = 1721696947075_192.168.200.1_2755
+09:09:07:865  INFO 43300 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [3a78bb92-7e12-471b-9e31-1e419c1da001] Notify connected event to listeners.
+09:09:07:866  INFO 43300 --- [main] com.alibaba.nacos.common.remote.client   : [3a78bb92-7e12-471b-9e31-1e419c1da001] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+09:09:07:866  INFO 43300 --- [main] com.alibaba.nacos.common.remote.client   : [3a78bb92-7e12-471b-9e31-1e419c1da001] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$974/0x000000080074f040
+09:09:07:891  INFO 43300 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+09:09:07:897  INFO 43300 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP trade-service 10.196.122.166:8085 register finished
+09:09:08:346  INFO 43300 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+09:09:08:347  INFO 43300 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+09:09:08:357  INFO 43300 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+09:09:08:394  INFO 43300 --- [main] com.hmall.trade.TradeApplication         : Started TradeApplication in 6.009 seconds (JVM running for 6.753)
+09:09:08:438  INFO 43300 --- [nacos-grpc-client-executor-8] com.alibaba.nacos.common.remote.client   : [3a78bb92-7e12-471b-9e31-1e419c1da001] Receive server push request, request = NotifySubscriberRequest, requestId = 196
+09:09:08:440  INFO 43300 --- [nacos-grpc-client-executor-8] com.alibaba.nacos.common.remote.client   : [3a78bb92-7e12-471b-9e31-1e419c1da001] Ack server push request, request = NotifySubscriberRequest, requestId = 196
+09:09:42:163  INFO 43300 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:09:42:164  INFO 43300 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+09:09:42:164  INFO 43300 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+09:09:42:189  INFO 43300 --- [http-nio-8085-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+09:09:42:307  INFO 43300 --- [http-nio-8085-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+09:09:42:316 DEBUG 43300 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120 HTTP/1.1
+09:09:42:316 DEBUG 43300 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+09:09:42:316 DEBUG 43300 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+09:09:42:397 DEBUG 43300 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200 (80ms)
+09:09:42:397 DEBUG 43300 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+09:09:42:397 DEBUG 43300 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+09:09:42:397 DEBUG 43300 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Tue, 23 Jul 2024 01:09:42 GMT
+09:09:42:397 DEBUG 43300 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+09:09:42:397 DEBUG 43300 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+09:09:42:397 DEBUG 43300 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+09:09:42:398 DEBUG 43300 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+09:09:42:398 DEBUG 43300 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (384-byte body)
+09:09:42:421 DEBUG 43300 --- [http-nio-8085-exec-1] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
+09:09:42:434 DEBUG 43300 --- [http-nio-8085-exec-1] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1815554850597449730(Long), 379500(Integer), 3(Integer), 1(Long), 1(Integer)
+09:09:42:438 DEBUG 43300 --- [http-nio-8085-exec-1] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
+09:09:42:442 DEBUG 43300 --- [http-nio-8085-exec-1] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+09:09:42:443 DEBUG 43300 --- [http-nio-8085-exec-1] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1815554850597449730(Long), 8533120(Long), 1(Integer), 海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视(String), {}(String), 379500(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp(String)
+09:09:42:452 DEBUG 43300 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> GET http://cart-service/carts?ids=8533120 HTTP/1.1
+09:09:42:452 DEBUG 43300 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] user-info: 1
+09:09:42:452 DEBUG 43300 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> END HTTP (0-byte body)
+09:09:42:478 DEBUG 43300 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- HTTP/1.1 200 (25ms)
+09:09:42:478 DEBUG 43300 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] connection: keep-alive
+09:09:42:478 DEBUG 43300 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] content-type: application/json
+09:09:42:478 DEBUG 43300 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] date: Tue, 23 Jul 2024 01:09:42 GMT
+09:09:42:478 DEBUG 43300 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] keep-alive: timeout=60
+09:09:42:478 DEBUG 43300 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] transfer-encoding: chunked
+09:09:42:478 DEBUG 43300 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] 
+09:09:42:478 DEBUG 43300 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] [{"id":"10","itemId":"8533120","num":1,"name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","spec":"{}","price":379500,"newPrice":379500,"status":1,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","createTime":"2024-07-22T15:28:35"}]
+09:09:42:478 DEBUG 43300 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- END HTTP (377-byte body)
+09:09:42:558 DEBUG 43300 --- [http-nio-8085-exec-2] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+09:09:42:559 DEBUG 43300 --- [http-nio-8085-exec-2] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1815554850597449730(Long)
+09:09:42:564 DEBUG 43300 --- [http-nio-8085-exec-2] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+09:09:42:923  INFO 43300 --- [nacos-grpc-client-executor-18] com.alibaba.nacos.common.remote.client   : [3a78bb92-7e12-471b-9e31-1e419c1da001] Receive server push request, request = NotifySubscriberRequest, requestId = 198
+09:09:42:924  INFO 43300 --- [nacos-grpc-client-executor-18] com.alibaba.nacos.common.remote.client   : [3a78bb92-7e12-471b-9e31-1e419c1da001] Ack server push request, request = NotifySubscriberRequest, requestId = 198
+09:09:43:022  INFO 43300 --- [nacos-grpc-client-executor-19] com.alibaba.nacos.common.remote.client   : [3a78bb92-7e12-471b-9e31-1e419c1da001] Receive server push request, request = NotifySubscriberRequest, requestId = 199
+09:09:43:022  INFO 43300 --- [nacos-grpc-client-executor-19] com.alibaba.nacos.common.remote.client   : [3a78bb92-7e12-471b-9e31-1e419c1da001] Ack server push request, request = NotifySubscriberRequest, requestId = 199
+09:12:37:185  WARN 43300 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+09:12:37:185  WARN 43300 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+09:12:37:185  WARN 43300 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+09:12:37:186  WARN 43300 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+09:12:37:517  INFO 43300 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+09:12:37:520  INFO 43300 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+09:12:37:844  INFO 43300 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+09:12:37:844  INFO 43300 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@9d06d3f[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+09:12:37:844  INFO 43300 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1721696947075_192.168.200.1_2755
+09:12:37:845  INFO 43300 --- [nacos-grpc-client-executor-62] c.a.n.c.remote.client.grpc.GrpcClient    : [1721696947075_192.168.200.1_2755]Ignore complete event,isRunning:false,isAbandon=false
+09:12:37:846  INFO 43300 --- [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@54925417[Running, pool size = 6, active threads = 0, queued tasks = 0, completed tasks = 63]
+09:12:37:852  INFO 43300 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+09:12:37:864  INFO 43300 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+09:12:41:311  INFO 3576 --- [main] com.hmall.trade.TradeApplication         : Starting TradeApplication using Java 11.0.23 on Qiuner with PID 3576 (D:\Code\hmall-SpringCloud-Study\trade-service\target\classes started by Qiuner in D:\Code\hmall-SpringCloud-Study)
+09:12:41:312 DEBUG 3576 --- [main] com.hmall.trade.TradeApplication         : Running with Spring Boot v2.7.12, Spring v5.3.27
+09:12:41:312  INFO 3576 --- [main] com.hmall.trade.TradeApplication         : The following 1 profile is active: "local"
+09:12:41:767  INFO 3576 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7cc6a128-8cf8-393f-aefa-c8ab3d2f2feb
+09:12:41:913  INFO 3576 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+09:12:41:917  INFO 3576 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+09:12:41:918  INFO 3576 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+09:12:41:978  INFO 3576 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+09:12:41:979  INFO 3576 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 645 ms
+09:12:43:243  INFO 3576 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+09:12:43:267  INFO 3576 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'cart-service' URL not provided. Will try picking an instance via load-balancing.
+09:12:43:920  INFO 3576 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+09:12:44:479  INFO 3576 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 4fddfd59-e3b8-42cd-81af-fa40a94857d2
+09:12:44:497  INFO 3576 --- [main] org.reflections.Reflections              : Reflections took 11 ms to scan 1 urls, producing 3 keys and 6 values 
+09:12:44:508  INFO 3576 --- [main] org.reflections.Reflections              : Reflections took 5 ms to scan 1 urls, producing 4 keys and 9 values 
+09:12:44:512  INFO 3576 --- [main] org.reflections.Reflections              : Reflections took 3 ms to scan 1 urls, producing 3 keys and 10 values 
+09:12:44:513  WARN 3576 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+09:12:44:518  INFO 3576 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 1 keys and 5 values 
+09:12:44:525  INFO 3576 --- [main] org.reflections.Reflections              : Reflections took 6 ms to scan 1 urls, producing 1 keys and 7 values 
+09:12:44:531  INFO 3576 --- [main] org.reflections.Reflections              : Reflections took 5 ms to scan 1 urls, producing 2 keys and 8 values 
+09:12:44:532  WARN 3576 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+09:12:44:533  INFO 3576 --- [main] com.alibaba.nacos.common.remote.client   : [4fddfd59-e3b8-42cd-81af-fa40a94857d2] RpcClient init label, labels = {module=naming, source=sdk}
+09:12:44:534  INFO 3576 --- [main] com.alibaba.nacos.common.remote.client   : [4fddfd59-e3b8-42cd-81af-fa40a94857d2] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+09:12:44:534  INFO 3576 --- [main] com.alibaba.nacos.common.remote.client   : [4fddfd59-e3b8-42cd-81af-fa40a94857d2] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+09:12:44:534  INFO 3576 --- [main] com.alibaba.nacos.common.remote.client   : [4fddfd59-e3b8-42cd-81af-fa40a94857d2] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+09:12:44:535  INFO 3576 --- [main] com.alibaba.nacos.common.remote.client   : [4fddfd59-e3b8-42cd-81af-fa40a94857d2] Try to connect to server on start up, server: {serverIp = '192.168.200.128', server main port = 8848}
+09:12:45:980  INFO 3576 --- [main] com.alibaba.nacos.common.remote.client   : [4fddfd59-e3b8-42cd-81af-fa40a94857d2] Success to connect to server [192.168.200.128:8848] on start up, connectionId = 1721697165181_192.168.200.1_3055
+09:12:45:980  INFO 3576 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [4fddfd59-e3b8-42cd-81af-fa40a94857d2] Notify connected event to listeners.
+09:12:45:981  INFO 3576 --- [main] com.alibaba.nacos.common.remote.client   : [4fddfd59-e3b8-42cd-81af-fa40a94857d2] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+09:12:45:981  INFO 3576 --- [main] com.alibaba.nacos.common.remote.client   : [4fddfd59-e3b8-42cd-81af-fa40a94857d2] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$974/0x000000080074f040
+09:12:46:007  INFO 3576 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+09:12:46:013  INFO 3576 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP trade-service 10.196.122.166:8085 register finished
+09:12:46:457  INFO 3576 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+09:12:46:458  INFO 3576 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+09:12:46:467  INFO 3576 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+09:12:46:506  INFO 3576 --- [main] com.hmall.trade.TradeApplication         : Started TradeApplication in 5.985 seconds (JVM running for 6.722)
+09:12:46:510  INFO 3576 --- [nacos-grpc-client-executor-8] com.alibaba.nacos.common.remote.client   : [4fddfd59-e3b8-42cd-81af-fa40a94857d2] Receive server push request, request = NotifySubscriberRequest, requestId = 202
+09:12:46:512  INFO 3576 --- [nacos-grpc-client-executor-8] com.alibaba.nacos.common.remote.client   : [4fddfd59-e3b8-42cd-81af-fa40a94857d2] Ack server push request, request = NotifySubscriberRequest, requestId = 202
+09:13:01:320  INFO 3576 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:13:01:320  INFO 3576 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+09:13:01:321  INFO 3576 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+09:13:01:344  INFO 3576 --- [http-nio-8085-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+09:13:01:459  INFO 3576 --- [http-nio-8085-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+09:13:01:467 DEBUG 3576 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120 HTTP/1.1
+09:13:01:467 DEBUG 3576 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+09:13:01:467 DEBUG 3576 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+09:13:01:525 DEBUG 3576 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200 (57ms)
+09:13:01:525 DEBUG 3576 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+09:13:01:525 DEBUG 3576 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+09:13:01:525 DEBUG 3576 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Tue, 23 Jul 2024 01:13:01 GMT
+09:13:01:525 DEBUG 3576 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+09:13:01:525 DEBUG 3576 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+09:13:01:525 DEBUG 3576 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+09:13:01:526 DEBUG 3576 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+09:13:01:526 DEBUG 3576 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (384-byte body)
+09:13:01:546 DEBUG 3576 --- [http-nio-8085-exec-1] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
+09:13:01:556 DEBUG 3576 --- [http-nio-8085-exec-1] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1815555685792358402(Long), 379500(Integer), 3(Integer), 1(Long), 1(Integer)
+09:13:01:561 DEBUG 3576 --- [http-nio-8085-exec-1] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
+09:13:01:565 DEBUG 3576 --- [http-nio-8085-exec-1] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+09:13:01:565 DEBUG 3576 --- [http-nio-8085-exec-1] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1815555685792358402(Long), 8533120(Long), 1(Integer), 海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视(String), {}(String), 379500(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp(String)
+09:13:01:574 DEBUG 3576 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> GET http://cart-service/carts?ids=8533120 HTTP/1.1
+09:13:01:575 DEBUG 3576 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] user-info: 1
+09:13:01:575 DEBUG 3576 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> END HTTP (0-byte body)
+09:13:01:598 DEBUG 3576 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- HTTP/1.1 200 (22ms)
+09:13:01:598 DEBUG 3576 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] connection: keep-alive
+09:13:01:598 DEBUG 3576 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] content-type: application/json
+09:13:01:598 DEBUG 3576 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] date: Tue, 23 Jul 2024 01:13:01 GMT
+09:13:01:598 DEBUG 3576 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] keep-alive: timeout=60
+09:13:01:598 DEBUG 3576 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] transfer-encoding: chunked
+09:13:01:598 DEBUG 3576 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] 
+09:13:01:598 DEBUG 3576 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] [{"id":"10","itemId":"8533120","num":1,"name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","spec":"{}","price":379500,"newPrice":379500,"status":1,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","createTime":"2024-07-22T15:28:35"}]
+09:13:01:598 DEBUG 3576 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- END HTTP (377-byte body)
+09:13:01:658 DEBUG 3576 --- [http-nio-8085-exec-2] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+09:13:01:659 DEBUG 3576 --- [http-nio-8085-exec-2] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1815555685792358402(Long)
+09:13:01:665 DEBUG 3576 --- [http-nio-8085-exec-2] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+09:13:02:088  INFO 3576 --- [nacos-grpc-client-executor-14] com.alibaba.nacos.common.remote.client   : [4fddfd59-e3b8-42cd-81af-fa40a94857d2] Receive server push request, request = NotifySubscriberRequest, requestId = 204
+09:13:02:088  INFO 3576 --- [nacos-grpc-client-executor-14] com.alibaba.nacos.common.remote.client   : [4fddfd59-e3b8-42cd-81af-fa40a94857d2] Ack server push request, request = NotifySubscriberRequest, requestId = 204
+09:13:02:092  INFO 3576 --- [nacos-grpc-client-executor-15] com.alibaba.nacos.common.remote.client   : [4fddfd59-e3b8-42cd-81af-fa40a94857d2] Receive server push request, request = NotifySubscriberRequest, requestId = 203
+09:13:02:092  INFO 3576 --- [nacos-grpc-client-executor-15] com.alibaba.nacos.common.remote.client   : [4fddfd59-e3b8-42cd-81af-fa40a94857d2] Ack server push request, request = NotifySubscriberRequest, requestId = 203
+09:19:15:363  WARN 3576 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+09:19:15:363  WARN 3576 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+09:19:15:363  WARN 3576 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+09:19:15:363  WARN 3576 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+09:19:15:702  INFO 3576 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+09:19:15:703  INFO 3576 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+09:19:16:031  INFO 3576 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+09:19:16:031  INFO 3576 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@5e06839d[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+09:19:16:031  INFO 3576 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1721697165181_192.168.200.1_3055
+09:19:16:032  INFO 3576 --- [nacos-grpc-client-executor-103] c.a.n.c.remote.client.grpc.GrpcClient    : [1721697165181_192.168.200.1_3055]Ignore complete event,isRunning:false,isAbandon=false
+09:19:16:034  INFO 3576 --- [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@505e67a8[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 104]
+09:19:16:041  INFO 3576 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+09:19:16:052  INFO 3576 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+09:19:19:507  INFO 11632 --- [main] com.hmall.trade.TradeApplication         : Starting TradeApplication using Java 11.0.23 on Qiuner with PID 11632 (D:\Code\hmall-SpringCloud-Study\trade-service\target\classes started by Qiuner in D:\Code\hmall-SpringCloud-Study)
+09:19:19:509 DEBUG 11632 --- [main] com.hmall.trade.TradeApplication         : Running with Spring Boot v2.7.12, Spring v5.3.27
+09:19:19:509  INFO 11632 --- [main] com.hmall.trade.TradeApplication         : The following 1 profile is active: "local"
+09:19:19:959  INFO 11632 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7cc6a128-8cf8-393f-aefa-c8ab3d2f2feb
+09:19:20:107  INFO 11632 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+09:19:20:111  INFO 11632 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+09:19:20:111  INFO 11632 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+09:19:20:169  INFO 11632 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+09:19:20:169  INFO 11632 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 640 ms
+09:19:21:428  INFO 11632 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+09:19:21:450  INFO 11632 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'cart-service' URL not provided. Will try picking an instance via load-balancing.
+09:19:22:099  INFO 11632 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+09:19:22:665  INFO 11632 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 558e1dc6-0c9a-4d72-be10-5e5dc18dce4b
+09:19:22:683  INFO 11632 --- [main] org.reflections.Reflections              : Reflections took 11 ms to scan 1 urls, producing 3 keys and 6 values 
+09:19:22:694  INFO 11632 --- [main] org.reflections.Reflections              : Reflections took 5 ms to scan 1 urls, producing 4 keys and 9 values 
+09:19:22:699  INFO 11632 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 3 keys and 10 values 
+09:19:22:700  WARN 11632 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+09:19:22:704  INFO 11632 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 1 keys and 5 values 
+09:19:22:710  INFO 11632 --- [main] org.reflections.Reflections              : Reflections took 5 ms to scan 1 urls, producing 1 keys and 7 values 
+09:19:22:717  INFO 11632 --- [main] org.reflections.Reflections              : Reflections took 6 ms to scan 1 urls, producing 2 keys and 8 values 
+09:19:22:718  WARN 11632 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+09:19:22:718  INFO 11632 --- [main] com.alibaba.nacos.common.remote.client   : [558e1dc6-0c9a-4d72-be10-5e5dc18dce4b] RpcClient init label, labels = {module=naming, source=sdk}
+09:19:22:719  INFO 11632 --- [main] com.alibaba.nacos.common.remote.client   : [558e1dc6-0c9a-4d72-be10-5e5dc18dce4b] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+09:19:22:719  INFO 11632 --- [main] com.alibaba.nacos.common.remote.client   : [558e1dc6-0c9a-4d72-be10-5e5dc18dce4b] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+09:19:22:719  INFO 11632 --- [main] com.alibaba.nacos.common.remote.client   : [558e1dc6-0c9a-4d72-be10-5e5dc18dce4b] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+09:19:22:720  INFO 11632 --- [main] com.alibaba.nacos.common.remote.client   : [558e1dc6-0c9a-4d72-be10-5e5dc18dce4b] Try to connect to server on start up, server: {serverIp = '192.168.200.128', server main port = 8848}
+09:19:24:195  INFO 11632 --- [main] com.alibaba.nacos.common.remote.client   : [558e1dc6-0c9a-4d72-be10-5e5dc18dce4b] Success to connect to server [192.168.200.128:8848] on start up, connectionId = 1721697563388_192.168.200.1_3439
+09:19:24:196  INFO 11632 --- [main] com.alibaba.nacos.common.remote.client   : [558e1dc6-0c9a-4d72-be10-5e5dc18dce4b] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+09:19:24:196  INFO 11632 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [558e1dc6-0c9a-4d72-be10-5e5dc18dce4b] Notify connected event to listeners.
+09:19:24:197  INFO 11632 --- [main] com.alibaba.nacos.common.remote.client   : [558e1dc6-0c9a-4d72-be10-5e5dc18dce4b] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$974/0x000000080074f040
+09:19:24:223  INFO 11632 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+09:19:24:228  INFO 11632 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP trade-service 10.196.122.166:8085 register finished
+09:19:24:679  INFO 11632 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+09:19:24:681  INFO 11632 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+09:19:24:691  INFO 11632 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+09:19:24:731  INFO 11632 --- [main] com.hmall.trade.TradeApplication         : Started TradeApplication in 6.003 seconds (JVM running for 6.731)
+09:19:24:745  INFO 11632 --- [nacos-grpc-client-executor-8] com.alibaba.nacos.common.remote.client   : [558e1dc6-0c9a-4d72-be10-5e5dc18dce4b] Receive server push request, request = NotifySubscriberRequest, requestId = 207
+09:19:24:747  INFO 11632 --- [nacos-grpc-client-executor-8] com.alibaba.nacos.common.remote.client   : [558e1dc6-0c9a-4d72-be10-5e5dc18dce4b] Ack server push request, request = NotifySubscriberRequest, requestId = 207
+09:19:28:007  INFO 11632 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:19:28:008  INFO 11632 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+09:19:28:008  INFO 11632 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+09:19:28:033  INFO 11632 --- [http-nio-8085-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+09:19:28:148  INFO 11632 --- [http-nio-8085-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+09:19:28:157 DEBUG 11632 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120 HTTP/1.1
+09:19:28:157 DEBUG 11632 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+09:19:28:157 DEBUG 11632 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+09:19:28:213 DEBUG 11632 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200 (56ms)
+09:19:28:214 DEBUG 11632 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+09:19:28:214 DEBUG 11632 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+09:19:28:214 DEBUG 11632 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Tue, 23 Jul 2024 01:19:28 GMT
+09:19:28:214 DEBUG 11632 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+09:19:28:214 DEBUG 11632 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+09:19:28:214 DEBUG 11632 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+09:19:28:214 DEBUG 11632 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+09:19:28:214 DEBUG 11632 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (384-byte body)
+09:19:28:237 DEBUG 11632 --- [http-nio-8085-exec-1] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
+09:19:28:249 DEBUG 11632 --- [http-nio-8085-exec-1] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1815557307687845889(Long), 379500(Integer), 3(Integer), 1(Long), 1(Integer)
+09:19:28:253 DEBUG 11632 --- [http-nio-8085-exec-1] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
+09:19:28:257 DEBUG 11632 --- [http-nio-8085-exec-1] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+09:19:28:258 DEBUG 11632 --- [http-nio-8085-exec-1] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1815557307687845889(Long), 8533120(Long), 1(Integer), 海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视(String), {}(String), 379500(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp(String)
+09:19:28:268 DEBUG 11632 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> GET http://cart-service/carts?ids=8533120 HTTP/1.1
+09:19:28:268 DEBUG 11632 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] user-info: 1
+09:19:28:268 DEBUG 11632 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> END HTTP (0-byte body)
+09:19:28:293 DEBUG 11632 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- HTTP/1.1 200 (24ms)
+09:19:28:293 DEBUG 11632 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] connection: keep-alive
+09:19:28:293 DEBUG 11632 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] content-type: application/json
+09:19:28:293 DEBUG 11632 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] date: Tue, 23 Jul 2024 01:19:28 GMT
+09:19:28:293 DEBUG 11632 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] keep-alive: timeout=60
+09:19:28:294 DEBUG 11632 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] transfer-encoding: chunked
+09:19:28:294 DEBUG 11632 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] 
+09:19:28:294 DEBUG 11632 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] [{"id":"10","itemId":"8533120","num":1,"name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","spec":"{}","price":379500,"newPrice":379500,"status":1,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","createTime":"2024-07-22T15:28:35"}]
+09:19:28:294 DEBUG 11632 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- END HTTP (377-byte body)
+09:19:28:377 DEBUG 11632 --- [http-nio-8085-exec-2] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+09:19:28:377 DEBUG 11632 --- [http-nio-8085-exec-2] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1815557307687845889(Long)
+09:19:28:383 DEBUG 11632 --- [http-nio-8085-exec-2] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+09:19:28:761  INFO 11632 --- [nacos-grpc-client-executor-12] com.alibaba.nacos.common.remote.client   : [558e1dc6-0c9a-4d72-be10-5e5dc18dce4b] Receive server push request, request = NotifySubscriberRequest, requestId = 208
+09:19:28:761  INFO 11632 --- [nacos-grpc-client-executor-12] com.alibaba.nacos.common.remote.client   : [558e1dc6-0c9a-4d72-be10-5e5dc18dce4b] Ack server push request, request = NotifySubscriberRequest, requestId = 208
+09:19:28:860  INFO 11632 --- [nacos-grpc-client-executor-13] com.alibaba.nacos.common.remote.client   : [558e1dc6-0c9a-4d72-be10-5e5dc18dce4b] Receive server push request, request = NotifySubscriberRequest, requestId = 209
+09:19:28:860  INFO 11632 --- [nacos-grpc-client-executor-13] com.alibaba.nacos.common.remote.client   : [558e1dc6-0c9a-4d72-be10-5e5dc18dce4b] Ack server push request, request = NotifySubscriberRequest, requestId = 209
+09:27:01:646  WARN 11632 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+09:27:01:646  WARN 11632 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+09:27:01:646  WARN 11632 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+09:27:01:648  WARN 11632 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+09:27:01:986  INFO 11632 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+09:27:01:989  INFO 11632 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+09:27:02:314  INFO 11632 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+09:27:02:314  INFO 11632 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@355c1d1f[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+09:27:02:314  INFO 11632 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1721697563388_192.168.200.1_3439
+09:27:02:315  INFO 11632 --- [nacos-grpc-client-executor-118] c.a.n.c.remote.client.grpc.GrpcClient    : [1721697563388_192.168.200.1_3439]Ignore complete event,isRunning:false,isAbandon=false
+09:27:02:317  INFO 11632 --- [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@2738bbb4[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 119]
+09:27:02:323  INFO 11632 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+09:27:02:335  INFO 11632 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+09:27:05:984  INFO 40828 --- [main] com.hmall.trade.TradeApplication         : Starting TradeApplication using Java 11.0.23 on Qiuner with PID 40828 (D:\Code\hmall-SpringCloud-Study\trade-service\target\classes started by Qiuner in D:\Code\hmall-SpringCloud-Study)
+09:27:05:985 DEBUG 40828 --- [main] com.hmall.trade.TradeApplication         : Running with Spring Boot v2.7.12, Spring v5.3.27
+09:27:05:985  INFO 40828 --- [main] com.hmall.trade.TradeApplication         : The following 1 profile is active: "local"
+09:27:06:458  INFO 40828 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7cc6a128-8cf8-393f-aefa-c8ab3d2f2feb
+09:27:06:606  INFO 40828 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+09:27:06:610  INFO 40828 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+09:27:06:610  INFO 40828 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+09:27:06:671  INFO 40828 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+09:27:06:671  INFO 40828 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 666 ms
+09:27:07:977  INFO 40828 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+09:27:08:014  INFO 40828 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'cart-service' URL not provided. Will try picking an instance via load-balancing.
+09:27:08:664  INFO 40828 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+09:27:09:234  INFO 40828 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 5dbe4a55-cbec-4ebd-9cd4-d3733c6c6f96
+09:27:09:251  INFO 40828 --- [main] org.reflections.Reflections              : Reflections took 11 ms to scan 1 urls, producing 3 keys and 6 values 
+09:27:09:263  INFO 40828 --- [main] org.reflections.Reflections              : Reflections took 5 ms to scan 1 urls, producing 4 keys and 9 values 
+09:27:09:268  INFO 40828 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 3 keys and 10 values 
+09:27:09:269  WARN 40828 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+09:27:09:273  INFO 40828 --- [main] org.reflections.Reflections              : Reflections took 3 ms to scan 1 urls, producing 1 keys and 5 values 
+09:27:09:278  INFO 40828 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 1 keys and 7 values 
+09:27:09:283  INFO 40828 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 2 keys and 8 values 
+09:27:09:284  WARN 40828 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+09:27:09:285  INFO 40828 --- [main] com.alibaba.nacos.common.remote.client   : [5dbe4a55-cbec-4ebd-9cd4-d3733c6c6f96] RpcClient init label, labels = {module=naming, source=sdk}
+09:27:09:286  INFO 40828 --- [main] com.alibaba.nacos.common.remote.client   : [5dbe4a55-cbec-4ebd-9cd4-d3733c6c6f96] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+09:27:09:286  INFO 40828 --- [main] com.alibaba.nacos.common.remote.client   : [5dbe4a55-cbec-4ebd-9cd4-d3733c6c6f96] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+09:27:09:286  INFO 40828 --- [main] com.alibaba.nacos.common.remote.client   : [5dbe4a55-cbec-4ebd-9cd4-d3733c6c6f96] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+09:27:09:288  INFO 40828 --- [main] com.alibaba.nacos.common.remote.client   : [5dbe4a55-cbec-4ebd-9cd4-d3733c6c6f96] Try to connect to server on start up, server: {serverIp = '192.168.200.128', server main port = 8848}
+09:27:10:760  INFO 40828 --- [main] com.alibaba.nacos.common.remote.client   : [5dbe4a55-cbec-4ebd-9cd4-d3733c6c6f96] Success to connect to server [192.168.200.128:8848] on start up, connectionId = 1721698029947_192.168.200.1_4321
+09:27:10:760  INFO 40828 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [5dbe4a55-cbec-4ebd-9cd4-d3733c6c6f96] Notify connected event to listeners.
+09:27:10:761  INFO 40828 --- [main] com.alibaba.nacos.common.remote.client   : [5dbe4a55-cbec-4ebd-9cd4-d3733c6c6f96] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+09:27:10:761  INFO 40828 --- [main] com.alibaba.nacos.common.remote.client   : [5dbe4a55-cbec-4ebd-9cd4-d3733c6c6f96] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$974/0x000000080074f040
+09:27:10:786  INFO 40828 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+09:27:10:793  INFO 40828 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP trade-service 10.196.122.166:8085 register finished
+09:27:11:239  INFO 40828 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+09:27:11:241  INFO 40828 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+09:27:11:249  INFO 40828 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+09:27:11:286  INFO 40828 --- [main] com.hmall.trade.TradeApplication         : Started TradeApplication in 6.111 seconds (JVM running for 6.848)
+09:27:11:299  INFO 40828 --- [nacos-grpc-client-executor-7] com.alibaba.nacos.common.remote.client   : [5dbe4a55-cbec-4ebd-9cd4-d3733c6c6f96] Receive server push request, request = NotifySubscriberRequest, requestId = 212
+09:27:11:301  INFO 40828 --- [nacos-grpc-client-executor-7] com.alibaba.nacos.common.remote.client   : [5dbe4a55-cbec-4ebd-9cd4-d3733c6c6f96] Ack server push request, request = NotifySubscriberRequest, requestId = 212
+09:27:17:934  INFO 40828 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:27:17:934  INFO 40828 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+09:27:17:934  INFO 40828 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+09:27:17:962  INFO 40828 --- [http-nio-8085-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+09:27:18:095  INFO 40828 --- [http-nio-8085-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+09:27:18:099 DEBUG 40828 --- [http-nio-8085-exec-1] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+09:27:18:109 DEBUG 40828 --- [http-nio-8085-exec-1] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1815557307687845889(Long)
+09:27:18:121 DEBUG 40828 --- [http-nio-8085-exec-1] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+09:27:34:507 DEBUG 40828 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120 HTTP/1.1
+09:27:34:507 DEBUG 40828 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+09:27:34:507 DEBUG 40828 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+09:27:34:564 DEBUG 40828 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200 (56ms)
+09:27:34:564 DEBUG 40828 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+09:27:34:564 DEBUG 40828 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+09:27:34:565 DEBUG 40828 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Tue, 23 Jul 2024 01:27:34 GMT
+09:27:34:565 DEBUG 40828 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+09:27:34:565 DEBUG 40828 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+09:27:34:565 DEBUG 40828 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+09:27:34:565 DEBUG 40828 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+09:27:34:565 DEBUG 40828 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (384-byte body)
+09:27:34:576 DEBUG 40828 --- [http-nio-8085-exec-2] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
+09:27:34:576 DEBUG 40828 --- [http-nio-8085-exec-2] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1815559347558158337(Long), 379500(Integer), 3(Integer), 1(Long), 1(Integer)
+09:27:34:580 DEBUG 40828 --- [http-nio-8085-exec-2] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
+09:27:34:583 DEBUG 40828 --- [http-nio-8085-exec-2] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+09:27:34:584 DEBUG 40828 --- [http-nio-8085-exec-2] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1815559347558158337(Long), 8533120(Long), 1(Integer), 海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视(String), {}(String), 379500(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp(String)
+09:27:34:587 DEBUG 40828 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> GET http://cart-service/carts?ids=8533120 HTTP/1.1
+09:27:34:587 DEBUG 40828 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] user-info: 1
+09:27:34:587 DEBUG 40828 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> END HTTP (0-byte body)
+09:27:34:607 DEBUG 40828 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- HTTP/1.1 200 (19ms)
+09:27:34:607 DEBUG 40828 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] connection: keep-alive
+09:27:34:607 DEBUG 40828 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] content-type: application/json
+09:27:34:607 DEBUG 40828 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] date: Tue, 23 Jul 2024 01:27:34 GMT
+09:27:34:607 DEBUG 40828 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] keep-alive: timeout=60
+09:27:34:607 DEBUG 40828 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] transfer-encoding: chunked
+09:27:34:607 DEBUG 40828 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] 
+09:27:34:607 DEBUG 40828 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] [{"id":"10","itemId":"8533120","num":1,"name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","spec":"{}","price":379500,"newPrice":379500,"status":1,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","createTime":"2024-07-22T15:28:35"}]
+09:27:34:607 DEBUG 40828 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- END HTTP (377-byte body)
+09:27:34:654 DEBUG 40828 --- [http-nio-8085-exec-3] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+09:27:34:654 DEBUG 40828 --- [http-nio-8085-exec-3] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1815559347558158337(Long)
+09:27:34:655 DEBUG 40828 --- [http-nio-8085-exec-3] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+09:27:35:121  INFO 40828 --- [nacos-grpc-client-executor-16] com.alibaba.nacos.common.remote.client   : [5dbe4a55-cbec-4ebd-9cd4-d3733c6c6f96] Receive server push request, request = NotifySubscriberRequest, requestId = 213
+09:27:35:121  INFO 40828 --- [nacos-grpc-client-executor-16] com.alibaba.nacos.common.remote.client   : [5dbe4a55-cbec-4ebd-9cd4-d3733c6c6f96] Ack server push request, request = NotifySubscriberRequest, requestId = 213
+09:27:35:125  INFO 40828 --- [nacos-grpc-client-executor-17] com.alibaba.nacos.common.remote.client   : [5dbe4a55-cbec-4ebd-9cd4-d3733c6c6f96] Receive server push request, request = NotifySubscriberRequest, requestId = 214
+09:27:35:125  INFO 40828 --- [nacos-grpc-client-executor-17] com.alibaba.nacos.common.remote.client   : [5dbe4a55-cbec-4ebd-9cd4-d3733c6c6f96] Ack server push request, request = NotifySubscriberRequest, requestId = 214
+09:36:57:670  WARN 40828 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+09:36:57:670  WARN 40828 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+09:36:57:670  WARN 40828 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+09:36:57:670  WARN 40828 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+09:36:58:361  INFO 40828 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+09:36:58:365  INFO 40828 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+09:36:58:697  INFO 40828 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+09:36:58:697  INFO 40828 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@51048db6[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+09:36:58:697  INFO 40828 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1721698029947_192.168.200.1_4321
+09:36:58:699  INFO 40828 --- [nacos-grpc-client-executor-149] c.a.n.c.remote.client.grpc.GrpcClient    : [1721698029947_192.168.200.1_4321]Ignore complete event,isRunning:false,isAbandon=false
+09:36:58:701  INFO 40828 --- [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@581f0f97[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 150]
+09:36:58:707  INFO 40828 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+09:36:58:722  INFO 40828 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+09:37:02:739  INFO 27988 --- [main] com.hmall.trade.TradeApplication         : Starting TradeApplication using Java 11.0.23 on Qiuner with PID 27988 (D:\Code\hmall-SpringCloud-Study\trade-service\target\classes started by Qiuner in D:\Code\hmall-SpringCloud-Study)
+09:37:02:741 DEBUG 27988 --- [main] com.hmall.trade.TradeApplication         : Running with Spring Boot v2.7.12, Spring v5.3.27
+09:37:02:741  INFO 27988 --- [main] com.hmall.trade.TradeApplication         : The following 1 profile is active: "local"
+09:37:03:252  INFO 27988 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7cc6a128-8cf8-393f-aefa-c8ab3d2f2feb
+09:37:03:420  INFO 27988 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+09:37:03:423  INFO 27988 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+09:37:03:424  INFO 27988 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+09:37:03:488  INFO 27988 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+09:37:03:488  INFO 27988 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 721 ms
+09:37:05:054  INFO 27988 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+09:37:05:088  INFO 27988 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'cart-service' URL not provided. Will try picking an instance via load-balancing.
+09:37:05:819  INFO 27988 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+09:37:06:497  INFO 27988 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 459ebf22-a55b-4ea5-a958-a43f31e592fe
+09:37:06:516  INFO 27988 --- [main] org.reflections.Reflections              : Reflections took 11 ms to scan 1 urls, producing 3 keys and 6 values 
+09:37:06:530  INFO 27988 --- [main] org.reflections.Reflections              : Reflections took 5 ms to scan 1 urls, producing 4 keys and 9 values 
+09:37:06:536  INFO 27988 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 3 keys and 10 values 
+09:37:06:537  WARN 27988 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+09:37:06:541  INFO 27988 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 1 keys and 5 values 
+09:37:06:546  INFO 27988 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 1 keys and 7 values 
+09:37:06:552  INFO 27988 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 2 keys and 8 values 
+09:37:06:553  WARN 27988 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+09:37:06:554  INFO 27988 --- [main] com.alibaba.nacos.common.remote.client   : [459ebf22-a55b-4ea5-a958-a43f31e592fe] RpcClient init label, labels = {module=naming, source=sdk}
+09:37:06:555  INFO 27988 --- [main] com.alibaba.nacos.common.remote.client   : [459ebf22-a55b-4ea5-a958-a43f31e592fe] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+09:37:06:555  INFO 27988 --- [main] com.alibaba.nacos.common.remote.client   : [459ebf22-a55b-4ea5-a958-a43f31e592fe] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+09:37:06:555  INFO 27988 --- [main] com.alibaba.nacos.common.remote.client   : [459ebf22-a55b-4ea5-a958-a43f31e592fe] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+09:37:06:556  INFO 27988 --- [main] com.alibaba.nacos.common.remote.client   : [459ebf22-a55b-4ea5-a958-a43f31e592fe] Try to connect to server on start up, server: {serverIp = '192.168.200.128', server main port = 8848}
+09:37:08:522  INFO 27988 --- [main] com.alibaba.nacos.common.remote.client   : [459ebf22-a55b-4ea5-a958-a43f31e592fe] Success to connect to server [192.168.200.128:8848] on start up, connectionId = 1721698627689_192.168.200.1_4838
+09:37:08:522  INFO 27988 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [459ebf22-a55b-4ea5-a958-a43f31e592fe] Notify connected event to listeners.
+09:37:08:523  INFO 27988 --- [main] com.alibaba.nacos.common.remote.client   : [459ebf22-a55b-4ea5-a958-a43f31e592fe] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+09:37:08:523  INFO 27988 --- [main] com.alibaba.nacos.common.remote.client   : [459ebf22-a55b-4ea5-a958-a43f31e592fe] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$974/0x000000080074f040
+09:37:08:551  INFO 27988 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+09:37:08:557  INFO 27988 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP trade-service 10.196.122.166:8085 register finished
+09:37:09:039  INFO 27988 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [459ebf22-a55b-4ea5-a958-a43f31e592fe] Receive server push request, request = NotifySubscriberRequest, requestId = 215
+09:37:09:041  INFO 27988 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [459ebf22-a55b-4ea5-a958-a43f31e592fe] Ack server push request, request = NotifySubscriberRequest, requestId = 215
+09:37:09:442  INFO 27988 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+09:37:09:444  INFO 27988 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+09:37:09:457  INFO 27988 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+09:37:09:513  INFO 27988 --- [main] com.hmall.trade.TradeApplication         : Started TradeApplication in 7.577 seconds (JVM running for 8.353)
+10:02:37:469  INFO 27988 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:02:37:469  INFO 27988 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+10:02:37:469  INFO 27988 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+10:02:37:499  INFO 27988 --- [http-nio-8085-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+10:02:37:620  INFO 27988 --- [http-nio-8085-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+10:02:37:630 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120 HTTP/1.1
+10:02:37:630 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 2
+10:02:37:630 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+10:02:37:693 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200 (63ms)
+10:02:37:694 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+10:02:37:694 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+10:02:37:694 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Tue, 23 Jul 2024 02:02:37 GMT
+10:02:37:694 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+10:02:37:694 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+10:02:37:694 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+10:02:37:694 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+10:02:37:694 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (384-byte body)
+10:02:37:716 DEBUG 27988 --- [http-nio-8085-exec-1] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
+10:02:37:730 DEBUG 27988 --- [http-nio-8085-exec-1] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1815568168754163714(Long), 379500(Integer), 3(Integer), 2(Long), 1(Integer)
+10:02:37:732 DEBUG 27988 --- [http-nio-8085-exec-1] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
+10:02:37:737 DEBUG 27988 --- [http-nio-8085-exec-1] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+10:02:37:737 DEBUG 27988 --- [http-nio-8085-exec-1] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1815568168754163714(Long), 8533120(Long), 1(Integer), 海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视(String), {}(String), 379500(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp(String)
+10:02:37:747 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> GET http://cart-service/carts?ids=8533120 HTTP/1.1
+10:02:37:748 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] user-info: 2
+10:02:37:748 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> END HTTP (0-byte body)
+10:02:37:768 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- HTTP/1.1 200 (21ms)
+10:02:37:769 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] connection: keep-alive
+10:02:37:769 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] content-type: application/json
+10:02:37:769 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] date: Tue, 23 Jul 2024 02:02:37 GMT
+10:02:37:769 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] keep-alive: timeout=60
+10:02:37:769 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] transfer-encoding: chunked
+10:02:37:769 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] 
+10:02:37:769 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] [{"id":"11","itemId":"8533120","num":1,"name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","spec":"{}","price":379500,"newPrice":379500,"status":1,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","createTime":"2024-07-22T16:18:44"}]
+10:02:37:769 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- END HTTP (377-byte body)
+10:02:37:837 DEBUG 27988 --- [http-nio-8085-exec-2] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+10:02:37:838 DEBUG 27988 --- [http-nio-8085-exec-2] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1815568168754163714(Long)
+10:02:37:846 DEBUG 27988 --- [http-nio-8085-exec-2] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+10:02:38:220  INFO 27988 --- [nacos-grpc-client-executor-322] com.alibaba.nacos.common.remote.client   : [459ebf22-a55b-4ea5-a958-a43f31e592fe] Receive server push request, request = NotifySubscriberRequest, requestId = 231
+10:02:38:220  INFO 27988 --- [nacos-grpc-client-executor-322] com.alibaba.nacos.common.remote.client   : [459ebf22-a55b-4ea5-a958-a43f31e592fe] Ack server push request, request = NotifySubscriberRequest, requestId = 231
+10:02:38:320  INFO 27988 --- [nacos-grpc-client-executor-323] com.alibaba.nacos.common.remote.client   : [459ebf22-a55b-4ea5-a958-a43f31e592fe] Receive server push request, request = NotifySubscriberRequest, requestId = 232
+10:02:38:321  INFO 27988 --- [nacos-grpc-client-executor-323] com.alibaba.nacos.common.remote.client   : [459ebf22-a55b-4ea5-a958-a43f31e592fe] Ack server push request, request = NotifySubscriberRequest, requestId = 232
+10:03:22:759 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120 HTTP/1.1
+10:03:22:759 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 2
+10:03:22:759 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+10:03:22:766 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200 (6ms)
+10:03:22:766 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+10:03:22:766 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+10:03:22:766 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Tue, 23 Jul 2024 02:03:22 GMT
+10:03:22:766 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+10:03:22:766 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+10:03:22:766 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+10:03:22:766 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+10:03:22:768 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (384-byte body)
+10:03:22:768 DEBUG 27988 --- [http-nio-8085-exec-3] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
+10:03:22:768 DEBUG 27988 --- [http-nio-8085-exec-3] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1815568357682393089(Long), 379500(Integer), 3(Integer), 2(Long), 1(Integer)
+10:03:22:770 DEBUG 27988 --- [http-nio-8085-exec-3] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
+10:03:22:770 DEBUG 27988 --- [http-nio-8085-exec-3] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+10:03:22:770 DEBUG 27988 --- [http-nio-8085-exec-3] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1815568357682393089(Long), 8533120(Long), 1(Integer), 海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视(String), {}(String), 379500(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp(String)
+10:03:22:772 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> GET http://cart-service/carts?ids=8533120 HTTP/1.1
+10:03:22:772 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] user-info: 2
+10:03:22:772 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> END HTTP (0-byte body)
+10:03:22:785 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- HTTP/1.1 200 (11ms)
+10:03:22:785 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] connection: keep-alive
+10:03:22:785 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] content-type: application/json
+10:03:22:785 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] date: Tue, 23 Jul 2024 02:03:22 GMT
+10:03:22:785 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] keep-alive: timeout=60
+10:03:22:785 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] transfer-encoding: chunked
+10:03:22:785 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] 
+10:03:22:785 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] [{"id":"11","itemId":"8533120","num":1,"name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","spec":"{}","price":379500,"newPrice":379500,"status":1,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","createTime":"2024-07-22T16:18:44"}]
+10:03:22:785 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- END HTTP (377-byte body)
+10:03:22:833 DEBUG 27988 --- [http-nio-8085-exec-4] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+10:03:22:833 DEBUG 27988 --- [http-nio-8085-exec-4] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1815568357682393089(Long)
+10:03:22:834 DEBUG 27988 --- [http-nio-8085-exec-4] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+10:17:09:437 DEBUG 27988 --- [http-nio-8085-exec-10] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+10:17:09:437 DEBUG 27988 --- [http-nio-8085-exec-10] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1815568357682393089(Long)
+10:17:09:439 DEBUG 27988 --- [http-nio-8085-exec-10] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+10:17:22:009 DEBUG 27988 --- [http-nio-8085-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120 HTTP/1.1
+10:17:22:009 DEBUG 27988 --- [http-nio-8085-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+10:17:22:009 DEBUG 27988 --- [http-nio-8085-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+10:17:22:016 DEBUG 27988 --- [http-nio-8085-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200 (6ms)
+10:17:22:017 DEBUG 27988 --- [http-nio-8085-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+10:17:22:017 DEBUG 27988 --- [http-nio-8085-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+10:17:22:017 DEBUG 27988 --- [http-nio-8085-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Tue, 23 Jul 2024 02:17:22 GMT
+10:17:22:017 DEBUG 27988 --- [http-nio-8085-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+10:17:22:017 DEBUG 27988 --- [http-nio-8085-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+10:17:22:017 DEBUG 27988 --- [http-nio-8085-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+10:17:22:017 DEBUG 27988 --- [http-nio-8085-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+10:17:22:017 DEBUG 27988 --- [http-nio-8085-exec-7] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (384-byte body)
+10:17:22:018 DEBUG 27988 --- [http-nio-8085-exec-7] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
+10:17:22:018 DEBUG 27988 --- [http-nio-8085-exec-7] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1815571877798162434(Long), 379500(Integer), 3(Integer), 1(Long), 1(Integer)
+10:17:22:020 DEBUG 27988 --- [http-nio-8085-exec-7] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
+10:17:22:021 DEBUG 27988 --- [http-nio-8085-exec-7] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+10:17:22:021 DEBUG 27988 --- [http-nio-8085-exec-7] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1815571877798162434(Long), 8533120(Long), 1(Integer), 海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视(String), {}(String), 379500(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp(String)
+10:17:22:022 DEBUG 27988 --- [http-nio-8085-exec-7] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> GET http://cart-service/carts?ids=8533120 HTTP/1.1
+10:17:22:022 DEBUG 27988 --- [http-nio-8085-exec-7] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] user-info: 1
+10:17:22:022 DEBUG 27988 --- [http-nio-8085-exec-7] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> END HTTP (0-byte body)
+10:17:22:038 DEBUG 27988 --- [http-nio-8085-exec-7] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- HTTP/1.1 200 (15ms)
+10:17:22:038 DEBUG 27988 --- [http-nio-8085-exec-7] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] connection: keep-alive
+10:17:22:039 DEBUG 27988 --- [http-nio-8085-exec-7] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] content-type: application/json
+10:17:22:039 DEBUG 27988 --- [http-nio-8085-exec-7] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] date: Tue, 23 Jul 2024 02:17:22 GMT
+10:17:22:039 DEBUG 27988 --- [http-nio-8085-exec-7] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] keep-alive: timeout=60
+10:17:22:039 DEBUG 27988 --- [http-nio-8085-exec-7] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] transfer-encoding: chunked
+10:17:22:039 DEBUG 27988 --- [http-nio-8085-exec-7] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] 
+10:17:22:039 DEBUG 27988 --- [http-nio-8085-exec-7] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] [{"id":"10","itemId":"8533120","num":1,"name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","spec":"{}","price":379500,"newPrice":379500,"status":1,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","createTime":"2024-07-22T15:28:35"}]
+10:17:22:039 DEBUG 27988 --- [http-nio-8085-exec-7] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- END HTTP (377-byte body)
+10:17:22:130 DEBUG 27988 --- [http-nio-8085-exec-8] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+10:17:22:132 DEBUG 27988 --- [http-nio-8085-exec-8] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1815571877798162434(Long)
+10:17:22:133 DEBUG 27988 --- [http-nio-8085-exec-8] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+11:22:50:948  INFO 27988 --- [nacos-grpc-client-executor-1369] com.alibaba.nacos.common.remote.client   : [459ebf22-a55b-4ea5-a958-a43f31e592fe] Receive server push request, request = NotifySubscriberRequest, requestId = 235
+11:22:50:951  INFO 27988 --- [nacos-grpc-client-executor-1369] com.alibaba.nacos.common.remote.client   : [459ebf22-a55b-4ea5-a958-a43f31e592fe] Ack server push request, request = NotifySubscriberRequest, requestId = 235
+11:22:59:890  INFO 27988 --- [nacos-grpc-client-executor-1371] com.alibaba.nacos.common.remote.client   : [459ebf22-a55b-4ea5-a958-a43f31e592fe] Receive server push request, request = NotifySubscriberRequest, requestId = 238
+11:22:59:891  INFO 27988 --- [nacos-grpc-client-executor-1371] com.alibaba.nacos.common.remote.client   : [459ebf22-a55b-4ea5-a958-a43f31e592fe] Ack server push request, request = NotifySubscriberRequest, requestId = 238
+11:23:30:611 DEBUG 27988 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120 HTTP/1.1
+11:23:30:611 DEBUG 27988 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 2
+11:23:30:611 DEBUG 27988 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+11:23:30:620 DEBUG 27988 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200 (8ms)
+11:23:30:620 DEBUG 27988 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+11:23:30:620 DEBUG 27988 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+11:23:30:620 DEBUG 27988 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Tue, 23 Jul 2024 03:23:30 GMT
+11:23:30:620 DEBUG 27988 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+11:23:30:620 DEBUG 27988 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+11:23:30:620 DEBUG 27988 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+11:23:30:620 DEBUG 27988 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+11:23:30:620 DEBUG 27988 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (384-byte body)
+11:23:30:623 DEBUG 27988 --- [http-nio-8085-exec-6] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
+11:23:30:625 DEBUG 27988 --- [http-nio-8085-exec-6] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1815588523317211137(Long), 379500(Integer), 3(Integer), 2(Long), 1(Integer)
+11:23:30:627 DEBUG 27988 --- [http-nio-8085-exec-6] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
+11:23:30:627 DEBUG 27988 --- [http-nio-8085-exec-6] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+11:23:30:627 DEBUG 27988 --- [http-nio-8085-exec-6] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1815588523317211137(Long), 8533120(Long), 1(Integer), 海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视(String), {}(String), 379500(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp(String)
+11:23:30:630 DEBUG 27988 --- [http-nio-8085-exec-6] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> GET http://cart-service/carts?ids=8533120 HTTP/1.1
+11:23:30:630 DEBUG 27988 --- [http-nio-8085-exec-6] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] user-info: 2
+11:23:30:630 DEBUG 27988 --- [http-nio-8085-exec-6] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> END HTTP (0-byte body)
+11:23:30:650 DEBUG 27988 --- [http-nio-8085-exec-6] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- HTTP/1.1 200 (20ms)
+11:23:30:650 DEBUG 27988 --- [http-nio-8085-exec-6] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] connection: keep-alive
+11:23:30:650 DEBUG 27988 --- [http-nio-8085-exec-6] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] content-type: application/json
+11:23:30:650 DEBUG 27988 --- [http-nio-8085-exec-6] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] date: Tue, 23 Jul 2024 03:23:30 GMT
+11:23:30:650 DEBUG 27988 --- [http-nio-8085-exec-6] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] keep-alive: timeout=60
+11:23:30:650 DEBUG 27988 --- [http-nio-8085-exec-6] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] transfer-encoding: chunked
+11:23:30:650 DEBUG 27988 --- [http-nio-8085-exec-6] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] 
+11:23:30:650 DEBUG 27988 --- [http-nio-8085-exec-6] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] [{"id":"11","itemId":"8533120","num":1,"name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","spec":"{}","price":379500,"newPrice":379500,"status":1,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","createTime":"2024-07-22T16:18:44"}]
+11:23:30:650 DEBUG 27988 --- [http-nio-8085-exec-6] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- END HTTP (377-byte body)
+11:23:30:702 DEBUG 27988 --- [http-nio-8085-exec-1] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+11:23:30:702 DEBUG 27988 --- [http-nio-8085-exec-1] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1815588523317211137(Long)
+11:23:30:704 DEBUG 27988 --- [http-nio-8085-exec-1] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+11:52:02:611  INFO 27988 --- [nacos-grpc-client-executor-1746] com.alibaba.nacos.common.remote.client   : [459ebf22-a55b-4ea5-a958-a43f31e592fe] Receive server push request, request = NotifySubscriberRequest, requestId = 241
+11:52:02:611  INFO 27988 --- [nacos-grpc-client-executor-1746] com.alibaba.nacos.common.remote.client   : [459ebf22-a55b-4ea5-a958-a43f31e592fe] Ack server push request, request = NotifySubscriberRequest, requestId = 241
+11:52:11:354  INFO 27988 --- [nacos-grpc-client-executor-1748] com.alibaba.nacos.common.remote.client   : [459ebf22-a55b-4ea5-a958-a43f31e592fe] Receive server push request, request = NotifySubscriberRequest, requestId = 244
+11:52:11:355  INFO 27988 --- [nacos-grpc-client-executor-1748] com.alibaba.nacos.common.remote.client   : [459ebf22-a55b-4ea5-a958-a43f31e592fe] Ack server push request, request = NotifySubscriberRequest, requestId = 244
+11:52:20:684 DEBUG 27988 --- [http-nio-8085-exec-3] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+11:52:20:684 DEBUG 27988 --- [http-nio-8085-exec-3] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1815588523317211137(Long)
+11:52:20:685 DEBUG 27988 --- [http-nio-8085-exec-3] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+11:52:25:445 DEBUG 27988 --- [http-nio-8085-exec-4] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+11:52:25:446 DEBUG 27988 --- [http-nio-8085-exec-4] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1815588523317211137(Long)
+11:52:25:448 DEBUG 27988 --- [http-nio-8085-exec-4] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+11:52:37:075 DEBUG 27988 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120 HTTP/1.1
+11:52:37:075 DEBUG 27988 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+11:52:37:075 DEBUG 27988 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+11:52:37:083 DEBUG 27988 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200 (6ms)
+11:52:37:083 DEBUG 27988 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+11:52:37:083 DEBUG 27988 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+11:52:37:083 DEBUG 27988 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Tue, 23 Jul 2024 03:52:37 GMT
+11:52:37:083 DEBUG 27988 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+11:52:37:083 DEBUG 27988 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+11:52:37:083 DEBUG 27988 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+11:52:37:083 DEBUG 27988 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+11:52:37:083 DEBUG 27988 --- [http-nio-8085-exec-5] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (384-byte body)
+11:52:37:085 DEBUG 27988 --- [http-nio-8085-exec-5] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
+11:52:37:085 DEBUG 27988 --- [http-nio-8085-exec-5] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1815595848505569281(Long), 379500(Integer), 3(Integer), 1(Long), 1(Integer)
+11:52:37:090 DEBUG 27988 --- [http-nio-8085-exec-5] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
+11:52:37:091 DEBUG 27988 --- [http-nio-8085-exec-5] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+11:52:37:091 DEBUG 27988 --- [http-nio-8085-exec-5] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1815595848505569281(Long), 8533120(Long), 1(Integer), 海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视(String), {}(String), 379500(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp(String)
+11:52:37:092 DEBUG 27988 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> GET http://cart-service/carts?ids=8533120 HTTP/1.1
+11:52:37:092 DEBUG 27988 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] user-info: 1
+11:52:37:092 DEBUG 27988 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> END HTTP (0-byte body)
+11:52:37:108 DEBUG 27988 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- HTTP/1.1 200 (15ms)
+11:52:37:108 DEBUG 27988 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] connection: keep-alive
+11:52:37:108 DEBUG 27988 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] content-type: application/json
+11:52:37:108 DEBUG 27988 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] date: Tue, 23 Jul 2024 03:52:37 GMT
+11:52:37:108 DEBUG 27988 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] keep-alive: timeout=60
+11:52:37:108 DEBUG 27988 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] transfer-encoding: chunked
+11:52:37:108 DEBUG 27988 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] 
+11:52:37:108 DEBUG 27988 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] [{"id":"10","itemId":"8533120","num":1,"name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","spec":"{}","price":379500,"newPrice":379500,"status":1,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","createTime":"2024-07-22T15:28:35"}]
+11:52:37:108 DEBUG 27988 --- [http-nio-8085-exec-5] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- END HTTP (377-byte body)
+11:52:37:161 DEBUG 27988 --- [http-nio-8085-exec-10] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+11:52:37:161 DEBUG 27988 --- [http-nio-8085-exec-10] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1815595848505569281(Long)
+11:52:37:164 DEBUG 27988 --- [http-nio-8085-exec-10] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+11:54:11:372  INFO 27988 --- [nacos-grpc-client-executor-1774] com.alibaba.nacos.common.remote.client   : [459ebf22-a55b-4ea5-a958-a43f31e592fe] Receive server push request, request = NotifySubscriberRequest, requestId = 247
+11:54:11:373  INFO 27988 --- [nacos-grpc-client-executor-1774] com.alibaba.nacos.common.remote.client   : [459ebf22-a55b-4ea5-a958-a43f31e592fe] Ack server push request, request = NotifySubscriberRequest, requestId = 247
+11:54:19:915  INFO 27988 --- [nacos-grpc-client-executor-1776] com.alibaba.nacos.common.remote.client   : [459ebf22-a55b-4ea5-a958-a43f31e592fe] Receive server push request, request = NotifySubscriberRequest, requestId = 249
+11:54:19:916  INFO 27988 --- [nacos-grpc-client-executor-1776] com.alibaba.nacos.common.remote.client   : [459ebf22-a55b-4ea5-a958-a43f31e592fe] Ack server push request, request = NotifySubscriberRequest, requestId = 249
+11:54:34:031 DEBUG 27988 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120 HTTP/1.1
+11:54:34:031 DEBUG 27988 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+11:54:34:031 DEBUG 27988 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+11:54:34:037 DEBUG 27988 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200 (5ms)
+11:54:34:037 DEBUG 27988 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+11:54:34:037 DEBUG 27988 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+11:54:34:037 DEBUG 27988 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Tue, 23 Jul 2024 03:54:34 GMT
+11:54:34:037 DEBUG 27988 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+11:54:34:037 DEBUG 27988 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+11:54:34:037 DEBUG 27988 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+11:54:34:037 DEBUG 27988 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+11:54:34:038 DEBUG 27988 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (384-byte body)
+11:54:34:038 DEBUG 27988 --- [http-nio-8085-exec-8] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
+11:54:34:038 DEBUG 27988 --- [http-nio-8085-exec-8] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1815596339008450562(Long), 379500(Integer), 3(Integer), 1(Long), 1(Integer)
+11:54:34:040 DEBUG 27988 --- [http-nio-8085-exec-8] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
+11:54:34:041 DEBUG 27988 --- [http-nio-8085-exec-8] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+11:54:34:041 DEBUG 27988 --- [http-nio-8085-exec-8] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1815596339008450562(Long), 8533120(Long), 1(Integer), 海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视(String), {}(String), 379500(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp(String)
+11:54:34:044 DEBUG 27988 --- [http-nio-8085-exec-8] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> GET http://cart-service/carts?ids=8533120 HTTP/1.1
+11:54:34:044 DEBUG 27988 --- [http-nio-8085-exec-8] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] user-info: 1
+11:54:34:044 DEBUG 27988 --- [http-nio-8085-exec-8] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> END HTTP (0-byte body)
+11:54:34:059 DEBUG 27988 --- [http-nio-8085-exec-8] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- HTTP/1.1 200 (15ms)
+11:54:34:059 DEBUG 27988 --- [http-nio-8085-exec-8] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] connection: keep-alive
+11:54:34:059 DEBUG 27988 --- [http-nio-8085-exec-8] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] content-type: application/json
+11:54:34:059 DEBUG 27988 --- [http-nio-8085-exec-8] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] date: Tue, 23 Jul 2024 03:54:34 GMT
+11:54:34:059 DEBUG 27988 --- [http-nio-8085-exec-8] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] keep-alive: timeout=60
+11:54:34:060 DEBUG 27988 --- [http-nio-8085-exec-8] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] transfer-encoding: chunked
+11:54:34:060 DEBUG 27988 --- [http-nio-8085-exec-8] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] 
+11:54:34:060 DEBUG 27988 --- [http-nio-8085-exec-8] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] [{"id":"10","itemId":"8533120","num":1,"name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","spec":"{}","price":379500,"newPrice":379500,"status":1,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","createTime":"2024-07-22T15:28:35"}]
+11:54:34:060 DEBUG 27988 --- [http-nio-8085-exec-8] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- END HTTP (377-byte body)
+11:54:34:108 DEBUG 27988 --- [http-nio-8085-exec-9] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+11:54:34:109 DEBUG 27988 --- [http-nio-8085-exec-9] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1815596339008450562(Long)
+11:54:34:110 DEBUG 27988 --- [http-nio-8085-exec-9] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+12:00:16:490  INFO 27988 --- [nacos-grpc-client-executor-1852] com.alibaba.nacos.common.remote.client   : [459ebf22-a55b-4ea5-a958-a43f31e592fe] Receive server push request, request = NotifySubscriberRequest, requestId = 253
+12:00:16:492  INFO 27988 --- [nacos-grpc-client-executor-1852] com.alibaba.nacos.common.remote.client   : [459ebf22-a55b-4ea5-a958-a43f31e592fe] Ack server push request, request = NotifySubscriberRequest, requestId = 253
+12:00:26:344  INFO 27988 --- [nacos-grpc-client-executor-1854] com.alibaba.nacos.common.remote.client   : [459ebf22-a55b-4ea5-a958-a43f31e592fe] Receive server push request, request = NotifySubscriberRequest, requestId = 254
+12:00:26:345  INFO 27988 --- [nacos-grpc-client-executor-1854] com.alibaba.nacos.common.remote.client   : [459ebf22-a55b-4ea5-a958-a43f31e592fe] Ack server push request, request = NotifySubscriberRequest, requestId = 254
+12:01:10:989 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120 HTTP/1.1
+12:01:10:989 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+12:01:10:989 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+12:01:10:994 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200 (5ms)
+12:01:10:995 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+12:01:10:995 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+12:01:10:995 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Tue, 23 Jul 2024 04:01:10 GMT
+12:01:10:995 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+12:01:10:995 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+12:01:10:995 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+12:01:10:995 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+12:01:10:995 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (384-byte body)
+12:01:10:995 DEBUG 27988 --- [http-nio-8085-exec-1] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
+12:01:10:996 DEBUG 27988 --- [http-nio-8085-exec-1] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1815598003983560706(Long), 379500(Integer), 3(Integer), 1(Long), 1(Integer)
+12:01:11:000 DEBUG 27988 --- [http-nio-8085-exec-1] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
+12:01:11:000 DEBUG 27988 --- [http-nio-8085-exec-1] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+12:01:11:000 DEBUG 27988 --- [http-nio-8085-exec-1] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1815598003983560706(Long), 8533120(Long), 1(Integer), 海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视(String), {}(String), 379500(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp(String)
+12:01:11:002 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> GET http://cart-service/carts?ids=8533120 HTTP/1.1
+12:01:11:002 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] user-info: 1
+12:01:11:002 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> END HTTP (0-byte body)
+12:01:11:019 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- HTTP/1.1 200 (16ms)
+12:01:11:019 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] connection: keep-alive
+12:01:11:019 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] content-type: application/json
+12:01:11:019 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] date: Tue, 23 Jul 2024 04:01:11 GMT
+12:01:11:019 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] keep-alive: timeout=60
+12:01:11:019 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] transfer-encoding: chunked
+12:01:11:019 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] 
+12:01:11:019 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] [{"id":"10","itemId":"8533120","num":1,"name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","spec":"{}","price":379500,"newPrice":379500,"status":1,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","createTime":"2024-07-22T15:28:35"}]
+12:01:11:019 DEBUG 27988 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- END HTTP (377-byte body)
+12:01:11:067 DEBUG 27988 --- [http-nio-8085-exec-2] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+12:01:11:067 DEBUG 27988 --- [http-nio-8085-exec-2] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1815598003983560706(Long)
+12:01:11:069 DEBUG 27988 --- [http-nio-8085-exec-2] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+12:01:49:498 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=40305713537 HTTP/1.1
+12:01:49:498 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+12:01:49:498 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+12:01:49:504 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200 (5ms)
+12:01:49:504 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+12:01:49:504 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+12:01:49:504 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Tue, 23 Jul 2024 04:01:49 GMT
+12:01:49:504 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+12:01:49:504 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+12:01:49:504 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+12:01:49:504 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"40305713537","name":"【官方正品 品牌直营】奥古狮登小白鞋女秋季透气2018新款百搭韩版休闲鞋运动鞋女鞋厚底板鞋女 浅蓝【厚底】 41","price":35400,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/14147/34/2890/275451/5c225484Ebd346404/e61513be4639ee2e.jpg!q70.jpg.webp","category":"休闲鞋","brand":"奥古狮登","spec":"{\"颜色\": \"金色\", \"尺码\": \"41\"}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+12:01:49:504 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (493-byte body)
+12:01:49:505 DEBUG 27988 --- [http-nio-8085-exec-3] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
+12:01:49:505 DEBUG 27988 --- [http-nio-8085-exec-3] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1815598165493624833(Long), 35400(Integer), 3(Integer), 1(Long), 1(Integer)
+12:01:49:506 DEBUG 27988 --- [http-nio-8085-exec-3] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
+12:01:49:508 DEBUG 27988 --- [http-nio-8085-exec-3] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+12:01:49:508 DEBUG 27988 --- [http-nio-8085-exec-3] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1815598165493624833(Long), 40305713537(Long), 1(Integer), 【官方正品 品牌直营】奥古狮登小白鞋女秋季透气2018新款百搭韩版休闲鞋运动鞋女鞋厚底板鞋女 浅蓝【厚底】 41(String), {"颜色": "金色", "尺码": "41"}(String), 35400(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/14147/34/2890/275451/5c225484Ebd346404/e61513be4639ee2e.jpg!q70.jpg.webp(String)
+12:01:49:510 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> GET http://cart-service/carts?ids=40305713537 HTTP/1.1
+12:01:49:510 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] user-info: 1
+12:01:49:510 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> END HTTP (0-byte body)
+12:01:49:525 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- HTTP/1.1 200 (14ms)
+12:01:49:525 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] connection: keep-alive
+12:01:49:525 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] content-type: application/json
+12:01:49:525 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] date: Tue, 23 Jul 2024 04:01:49 GMT
+12:01:49:525 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] keep-alive: timeout=60
+12:01:49:525 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] transfer-encoding: chunked
+12:01:49:525 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] 
+12:01:49:525 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] [{"id":"14","itemId":"40305713537","num":1,"name":"【官方正品 品牌直营】奥古狮登小白鞋女秋季透气2018新款百搭韩版休闲鞋运动鞋女鞋厚底板鞋女 浅蓝【厚底】 41","spec":"{\"颜色\": \"金色\", \"尺码\": \"41\"}","price":35400,"newPrice":35400,"status":1,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/14147/34/2890/275451/5c225484Ebd346404/e61513be4639ee2e.jpg!q70.jpg.webp","createTime":"2024-07-23T12:01:47"}]
+12:01:49:525 DEBUG 27988 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- END HTTP (482-byte body)
+12:01:49:592 DEBUG 27988 --- [http-nio-8085-exec-4] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+12:01:49:592 DEBUG 27988 --- [http-nio-8085-exec-4] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1815598165493624833(Long)
+12:01:49:594 DEBUG 27988 --- [http-nio-8085-exec-4] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+15:59:22:365  WARN 27988 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+15:59:22:366  WARN 27988 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+15:59:22:366  WARN 27988 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+15:59:22:366  WARN 27988 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+15:59:22:704  INFO 27988 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+15:59:22:706  INFO 27988 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+15:59:23:037  INFO 27988 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+15:59:23:037  INFO 27988 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@1d142342[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+15:59:23:037  INFO 27988 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1721698627689_192.168.200.1_4838
+15:59:23:037  INFO 27988 --- [nacos-grpc-client-executor-4955] c.a.n.c.remote.client.grpc.GrpcClient    : [1721698627689_192.168.200.1_4838]Ignore complete event,isRunning:false,isAbandon=false
+15:59:23:040  INFO 27988 --- [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@74e7214f[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 4956]
+15:59:23:049  INFO 27988 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+15:59:23:058  INFO 27988 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

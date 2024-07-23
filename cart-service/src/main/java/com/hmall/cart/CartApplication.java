@@ -8,7 +8,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
-@EnableFeignClients(basePackages = "com.hmall.api.client",defaultConfiguration = DefaultFeignConfig.class)
+@EnableFeignClients(basePackages = "com.hmall.api.client", defaultConfiguration = DefaultFeignConfig.class)
 @MapperScan("com.hmall.cart.mapper")
 @SpringBootApplication
 public class CartApplication {
@@ -17,8 +17,7 @@ public class CartApplication {
     }
 
     @Bean
-    public RestTemplate restTemplate(){
+    public RestTemplate restTemplate() {
         return new RestTemplate();
     }
-
 }

@@ -47,8 +47,6 @@ public class AuthGlobalFilter implements GlobalFilter, Ordered {
         }
         // 4.校验并解析token
         Long userId = null;
-
-
         try {
             userId = jwtTool.parseToken(token);
             System.out.println("令牌解析成功, userId: " + userId);

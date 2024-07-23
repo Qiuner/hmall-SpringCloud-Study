@@ -41,6 +41,7 @@ public class AddressController {
         Address address = addressService.getById(id);
         // 2.判断当前用户
         Long userId = UserContext.getUser();
+        System.out.println("我是user中的地址查询 我正在根据用户id 查询地址其中 userId为"+userId);
         if(!address.getUserId().equals(userId)){
             throw new BadRequestException("地址不属于当前登录用户");
         }

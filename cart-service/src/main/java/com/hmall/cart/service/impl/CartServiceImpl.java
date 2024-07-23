@@ -155,6 +155,7 @@ public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements IC
     public void removeByItemIds(Collection<Long> itemIds) {
         // 1.构建删除条件，userId和itemId
         QueryWrapper<Cart> queryWrapper = new QueryWrapper<Cart>();
+        System.out.println("我是cart中删除接口 UserId是"+UserContext.getUser());
         queryWrapper.lambda()
                 .eq(Cart::getUserId, UserContext.getUser())
                 .in(Cart::getItemId, itemIds);
