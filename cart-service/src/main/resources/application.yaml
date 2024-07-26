@@ -8,6 +8,8 @@ server:
 feign:
   okhttp:
     enabled: true # 开启OKHttp连接池支持
+  sentinel:
+    enabled: true # 开启Sentinel支持
 hm:
   swagger:
     title: "购物车服务接口文档"
