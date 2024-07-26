@@ -292,3 +292,12 @@ java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 49 millise
 10:08:35:763  INFO 34336 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [db757109-ad25-44e8-9708-e0ce51b8ae32] Server check success, currentServer is 192.168.200.128:8848 
 10:08:39:102  INFO 34336 --- [nacos-grpc-client-executor-24061] com.alibaba.nacos.common.remote.client   : [db757109-ad25-44e8-9708-e0ce51b8ae32] Receive server push request, request = NotifySubscriberRequest, requestId = 396
 10:08:39:103  INFO 34336 --- [nacos-grpc-client-executor-24061] com.alibaba.nacos.common.remote.client   : [db757109-ad25-44e8-9708-e0ce51b8ae32] Ack server push request, request = NotifySubscriberRequest, requestId = 396
+16:26:57:881 DEBUG 34336 --- [http-nio-8084-exec-4] c.h.user.mapper.UserMapper.selectOne     : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+16:26:57:888 DEBUG 34336 --- [http-nio-8084-exec-4] c.h.user.mapper.UserMapper.selectOne     : ==> Parameters: jack(String)
+16:26:57:894 DEBUG 34336 --- [http-nio-8084-exec-4] c.h.user.mapper.UserMapper.selectOne     : <==      Total: 1
+16:40:24:869 DEBUG 34336 --- [http-nio-8084-exec-6] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+16:40:24:869 DEBUG 34336 --- [http-nio-8084-exec-6] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 1(Long)
+16:40:24:871 DEBUG 34336 --- [http-nio-8084-exec-6] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 4
+17:15:07:642 DEBUG 34336 --- [http-nio-8084-exec-7] c.h.user.mapper.UserMapper.selectOne     : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+17:15:07:642 DEBUG 34336 --- [http-nio-8084-exec-7] c.h.user.mapper.UserMapper.selectOne     : ==> Parameters: jack(String)
+17:15:07:645 DEBUG 34336 --- [http-nio-8084-exec-7] c.h.user.mapper.UserMapper.selectOne     : <==      Total: 1
