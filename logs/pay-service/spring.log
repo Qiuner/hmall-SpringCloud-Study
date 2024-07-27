@@ -279,3 +279,7 @@ java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 15 millise
 10:08:36:235  INFO 44780 --- [nacos-grpc-client-executor-24335] com.alibaba.nacos.common.remote.client   : [4b80d30d-33d3-41a8-ad2a-5e6d0514188a] Ack server push request, request = NotifySubscriberRequest, requestId = 356
 10:08:36:238  INFO 44780 --- [nacos-grpc-client-executor-24336] com.alibaba.nacos.common.remote.client   : [4b80d30d-33d3-41a8-ad2a-5e6d0514188a] Receive server push request, request = NotifySubscriberRequest, requestId = 384
 10:08:36:238  INFO 44780 --- [nacos-grpc-client-executor-24336] com.alibaba.nacos.common.remote.client   : [4b80d30d-33d3-41a8-ad2a-5e6d0514188a] Ack server push request, request = NotifySubscriberRequest, requestId = 384
+15:57:17:486  INFO 35620 --- [main] com.hmall.pay.PayApplication             : Starting PayApplication using Java 17.0.11 on Qiuner with PID 35620 (D:\Code\hmall-SpringCloud-Study\pay-service\target\classes started by Qiuner in D:\Code\hmall-SpringCloud-Study)
+15:57:17:487 DEBUG 35620 --- [main] com.hmall.pay.PayApplication             : Running with Spring Boot v2.7.12, Spring v5.3.27
+15:57:17:488  INFO 35620 --- [main] com.hmall.pay.PayApplication             : The following 1 profile is active: "dev"
+15:57:18:056  INFO 35620 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=01d8b01a-9dca-395a-8a21-45a8fef661c6
