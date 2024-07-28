@@ -17,3 +17,441 @@
 09:20:58:922  INFO 23196 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0x80c6dc04, L:/192.168.200.1:11435 ! R:/192.168.200.128:8099]
 09:20:58:922  INFO 23196 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x80c6dc04, L:/192.168.200.1:11435 ! R:/192.168.200.128:8099]) will closed
 09:20:58:922  INFO 23196 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x80c6dc04, L:/192.168.200.1:11435 ! R:/192.168.200.128:8099]) will closed
+09:21:05:766  INFO 20388 --- [main] com.hmall.trade.TradeApplication         : The following 1 profile is active: "local"
+09:21:06:187  INFO 20388 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6924874e-7121-38a4-829f-c69e2657cc46
+09:21:06:215  INFO 20388 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:21:06:215  INFO 20388 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springApplicationContextProvider' of type [io.seata.spring.boot.autoconfigure.provider.SpringApplicationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:21:06:216  INFO 20388 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:21:06:228  INFO 20388 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'failureHandler' of type [io.seata.tm.api.DefaultFailureHandlerImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:21:06:230  INFO 20388 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:21:06:230  INFO 20388 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:21:06:230  INFO 20388 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$563/0x0000000800654c40] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:21:06:231  INFO 20388 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:21:06:232  INFO 20388 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springCloudAlibabaConfiguration' of type [io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:21:06:233  INFO 20388 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'seataProperties' of type [io.seata.spring.boot.autoconfigure.properties.SeataProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:21:06:233  INFO 20388 --- [main] i.s.s.b.a.SeataAutoConfiguration         : Automatically configure Seata
+09:21:06:256  INFO 20388 --- [main] io.seata.config.ConfigurationFactory     : load Configuration from :Spring Configuration
+09:21:06:258  INFO 20388 --- [main] io.seata.config.ConfigurationFactory     : load Configuration from :Spring Configuration
+09:21:06:280  INFO 20388 --- [main] i.s.s.a.GlobalTransactionScanner         : Initializing Global Transaction Clients ... 
+09:21:06:306  INFO 20388 --- [main] i.s.core.rpc.netty.NettyClientBootstrap  : NettyClientBootstrap has started
+09:21:06:384  INFO 20388 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of eba98968-20eb-4bd4-99f2-c18f72819c67
+09:21:06:384  INFO 20388 --- [main] com.alibaba.nacos.common.remote.client   : [eba98968-20eb-4bd4-99f2-c18f72819c67] RpcClient init label, labels = {module=naming, source=sdk}
+09:21:06:385  INFO 20388 --- [main] com.alibaba.nacos.common.remote.client   : [eba98968-20eb-4bd4-99f2-c18f72819c67] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+09:21:06:385  INFO 20388 --- [main] com.alibaba.nacos.common.remote.client   : [eba98968-20eb-4bd4-99f2-c18f72819c67] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+09:21:06:386  INFO 20388 --- [main] com.alibaba.nacos.common.remote.client   : [eba98968-20eb-4bd4-99f2-c18f72819c67] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+09:21:06:386  INFO 20388 --- [main] com.alibaba.nacos.common.remote.client   : [eba98968-20eb-4bd4-99f2-c18f72819c67] Try to connect to server on start up, server: {serverIp = '192.168.200.128', server main port = 8848}
+09:21:06:499  INFO 20388 --- [main] com.alibaba.nacos.common.remote.client   : [eba98968-20eb-4bd4-99f2-c18f72819c67] Success to connect to server [192.168.200.128:8848] on start up, connectionId = 1722004143555_192.168.200.1_2509
+09:21:06:499  INFO 20388 --- [main] com.alibaba.nacos.common.remote.client   : [eba98968-20eb-4bd4-99f2-c18f72819c67] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+09:21:06:499  INFO 20388 --- [main] com.alibaba.nacos.common.remote.client   : [eba98968-20eb-4bd4-99f2-c18f72819c67] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$471/0x0000000800423040
+09:21:06:499  INFO 20388 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [eba98968-20eb-4bd4-99f2-c18f72819c67] Notify connected event to listeners.
+09:21:06:518  INFO 20388 --- [main] i.s.c.r.netty.NettyClientChannelManager  : will connect to 192.168.200.128:8099
+09:21:06:851  INFO 20388 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:TMROLE,address:192.168.200.128:8099,msg:< RegisterTMRequest{applicationId='trade-service', transactionServiceGroup='hmall'} >
+09:21:07:037  INFO 20388 --- [nacos-grpc-client-executor-5] com.alibaba.nacos.common.remote.client   : [eba98968-20eb-4bd4-99f2-c18f72819c67] Receive server push request, request = NotifySubscriberRequest, requestId = 492
+09:21:07:039  INFO 20388 --- [nacos-grpc-client-executor-5] com.alibaba.nacos.common.remote.client   : [eba98968-20eb-4bd4-99f2-c18f72819c67] Ack server push request, request = NotifySubscriberRequest, requestId = 492
+09:21:07:233  INFO 20388 --- [main] i.s.c.rpc.netty.TmNettyRemotingClient    : register TM success. client version:1.5.2, server version:1.5.2,channel:[id: 0xf1939087, L:/192.168.200.1:2510 - R:/192.168.200.128:8099]
+09:21:07:235  INFO 20388 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 24 ms, version:1.5.2,role:TMROLE,channel:[id: 0xf1939087, L:/192.168.200.1:2510 - R:/192.168.200.128:8099]
+09:21:07:235  INFO 20388 --- [main] i.s.s.a.GlobalTransactionScanner         : Transaction Manager Client is initialized. applicationId[trade-service] txServiceGroup[hmall]
+09:21:07:240  INFO 20388 --- [main] io.seata.rm.datasource.AsyncWorker       : Async Commit Buffer Limit: 10000
+09:21:07:240  INFO 20388 --- [main] i.s.rm.datasource.xa.ResourceManagerXA   : ResourceManagerXA init ...
+09:21:07:243  INFO 20388 --- [main] i.s.core.rpc.netty.NettyClientBootstrap  : NettyClientBootstrap has started
+09:21:07:243  INFO 20388 --- [main] i.s.s.a.GlobalTransactionScanner         : Resource Manager is initialized. applicationId[trade-service] txServiceGroup[hmall]
+09:21:07:243  INFO 20388 --- [main] i.s.s.a.GlobalTransactionScanner         : Global Transaction Clients are initialized. 
+09:21:07:244  INFO 20388 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:21:07:316  INFO 20388 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:21:07:317  INFO 20388 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:21:07:437  INFO 20388 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+09:21:07:442  INFO 20388 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+09:21:07:442  INFO 20388 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+09:21:07:514  INFO 20388 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+09:21:07:514  INFO 20388 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1741 ms
+09:21:07:610  INFO 20388 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+09:21:07:727  INFO 20388 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+09:21:07:790  INFO 20388 --- [main] i.s.c.r.netty.NettyClientChannelManager  : will connect to 192.168.200.128:8099
+09:21:07:790  INFO 20388 --- [main] i.s.c.rpc.netty.RmNettyRemotingClient    : RM will register :jdbc:mysql://192.168.200.128:3306/hm-trade
+09:21:07:791  INFO 20388 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:RMROLE,address:192.168.200.128:8099,msg:< RegisterRMRequest{resourceIds='jdbc:mysql://192.168.200.128:3306/hm-trade', applicationId='trade-service', transactionServiceGroup='hmall'} >
+09:21:07:797  INFO 20388 --- [main] i.s.c.rpc.netty.RmNettyRemotingClient    : register RM success. client version:1.5.2, server version:1.5.2,channel:[id: 0x60e57b1a, L:/192.168.200.1:2515 - R:/192.168.200.128:8099]
+09:21:07:797  INFO 20388 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 4 ms, version:1.5.2,role:RMROLE,channel:[id: 0x60e57b1a, L:/192.168.200.1:2515 - R:/192.168.200.128:8099]
+09:21:08:999  INFO 20388 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+09:21:09:094  INFO 20388 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'cart-service' URL not provided. Will try picking an instance via load-balancing.
+09:21:09:130  INFO 20388 --- [main] i.s.s.a.GlobalTransactionScanner         : Bean[com.hmall.trade.service.impl.OrderServiceImpl$$EnhancerBySpringCGLIB$$4965911a] with name [orderServiceImpl] would use interceptor [io.seata.spring.annotation.GlobalTransactionalInterceptor]
+09:21:09:216  INFO 20388 --- [main] c.a.c.sentinel.SentinelWebMvcConfigurer  : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+09:21:09:848  INFO 20388 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+09:21:10:391  INFO 20388 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 61303c3d-b35c-4f77-ab42-feb5d39ec3da
+09:21:10:392  INFO 20388 --- [main] com.alibaba.nacos.common.remote.client   : [61303c3d-b35c-4f77-ab42-feb5d39ec3da] RpcClient init label, labels = {module=naming, source=sdk}
+09:21:10:392  INFO 20388 --- [main] com.alibaba.nacos.common.remote.client   : [61303c3d-b35c-4f77-ab42-feb5d39ec3da] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+09:21:10:392  INFO 20388 --- [main] com.alibaba.nacos.common.remote.client   : [61303c3d-b35c-4f77-ab42-feb5d39ec3da] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+09:21:10:392  INFO 20388 --- [main] com.alibaba.nacos.common.remote.client   : [61303c3d-b35c-4f77-ab42-feb5d39ec3da] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+09:21:10:392  INFO 20388 --- [main] com.alibaba.nacos.common.remote.client   : [61303c3d-b35c-4f77-ab42-feb5d39ec3da] Try to connect to server on start up, server: {serverIp = '192.168.200.128', server main port = 8848}
+09:21:10:606  INFO 20388 --- [main] com.alibaba.nacos.common.remote.client   : [61303c3d-b35c-4f77-ab42-feb5d39ec3da] Success to connect to server [192.168.200.128:8848] on start up, connectionId = 1722004147984_192.168.200.1_2527
+09:21:10:606  INFO 20388 --- [main] com.alibaba.nacos.common.remote.client   : [61303c3d-b35c-4f77-ab42-feb5d39ec3da] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+09:21:10:606  INFO 20388 --- [main] com.alibaba.nacos.common.remote.client   : [61303c3d-b35c-4f77-ab42-feb5d39ec3da] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$471/0x0000000800423040
+09:21:10:606  INFO 20388 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [61303c3d-b35c-4f77-ab42-feb5d39ec3da] Notify connected event to listeners.
+09:21:10:618  INFO 20388 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+09:21:10:623  INFO 20388 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP trade-service 10.196.122.166:8085 register finished
+09:21:11:071  INFO 20388 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+09:21:11:073  INFO 20388 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+09:21:11:082  INFO 20388 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+09:21:11:119  INFO 20388 --- [main] com.hmall.trade.TradeApplication         : Started TradeApplication in 8.388 seconds (JVM running for 9.124)
+09:21:11:122  INFO 20388 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=trade-service, group=DEFAULT_GROUP
+09:21:11:122  INFO 20388 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=trade-service-local.yaml, group=DEFAULT_GROUP
+09:21:11:123  INFO 20388 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=trade-service.yaml, group=DEFAULT_GROUP
+09:21:11:144  INFO 20388 --- [nacos-grpc-client-executor-7] com.alibaba.nacos.common.remote.client   : [61303c3d-b35c-4f77-ab42-feb5d39ec3da] Receive server push request, request = NotifySubscriberRequest, requestId = 493
+09:21:11:145  INFO 20388 --- [nacos-grpc-client-executor-7] com.alibaba.nacos.common.remote.client   : [61303c3d-b35c-4f77-ab42-feb5d39ec3da] Ack server push request, request = NotifySubscriberRequest, requestId = 493
+09:21:26:407  INFO 20388 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:21:26:407  INFO 20388 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+09:21:26:408  INFO 20388 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+09:21:26:494  INFO 20388 --- [http-nio-8085-exec-1] io.seata.tm.TransactionManagerHolder     : TransactionManager Singleton io.seata.tm.DefaultTransactionManager@39558559
+09:21:26:531  INFO 20388 --- [http-nio-8085-exec-1] i.seata.tm.api.DefaultGlobalTransaction  : Begin new global transaction [192.168.200.128:8099:36575623703769089]
+09:21:26:536 DEBUG 20388 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120&ids=1713453&ids=100001536647 HTTP/1.1
+09:21:26:536 DEBUG 20388 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+09:21:26:536 DEBUG 20388 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+09:21:26:656 DEBUG 20388 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (119ms)
+09:21:26:656 DEBUG 20388 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+09:21:26:656 DEBUG 20388 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+09:21:26:656 DEBUG 20388 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Sun, 28 Jul 2024 01:21:26 GMT
+09:21:26:656 DEBUG 20388 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+09:21:26:656 DEBUG 20388 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+09:21:26:656 DEBUG 20388 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+09:21:26:657 DEBUG 20388 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"1713453","name":"小鹿叮叮 超薄 成长裤 婴儿拉拉裤 男女学步通用尿不湿 大号L码84片【9-14kg】","price":12800,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t22591/39/1930198982/188975/7385556d/5b6d33bdNa455e2b0.jpg!q70.jpg.webp","category":"拉拉裤","brand":"小鹿叮叮","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1},{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1},{"id":"100001536647","name":"HMDIME 牛仔裤女2018秋冬新品 九分裤韩版弹力修身破洞抓绒翻边小脚铅笔裤 DLSF17132 蓝色 26","price":17900,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t28525/357/413106456/209403/a5495aaa/5bf36631N0cb98da1.jpg!q70.jpg.webp","category":"牛仔裤","brand":"HMDIME","spec":"{\"颜色\": \"蓝色\", \"尺码\": \"32\"}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+09:21:26:657 DEBUG 20388 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (1226-byte body)
+09:21:26:684 DEBUG 20388 --- [http-nio-8085-exec-1] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
+09:21:26:780 DEBUG 20388 --- [http-nio-8085-exec-1] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1817369743810183170(Long), 410200(Integer), 3(Integer), 1(Long), 1(Integer)
+09:21:26:852 DEBUG 20388 --- [http-nio-8085-exec-1] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
+09:21:26:859 DEBUG 20388 --- [http-nio-8085-exec-1] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+09:21:26:860 DEBUG 20388 --- [http-nio-8085-exec-1] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1817369743810183170(Long), 1713453(Long), 1(Integer), 小鹿叮叮 超薄 成长裤 婴儿拉拉裤 男女学步通用尿不湿 大号L码84片【9-14kg】(String), {}(String), 12800(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t22591/39/1930198982/188975/7385556d/5b6d33bdNa455e2b0.jpg!q70.jpg.webp(String)
+09:21:26:861 DEBUG 20388 --- [http-nio-8085-exec-1] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1817369743810183170(Long), 8533120(Long), 1(Integer), 海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视(String), {}(String), 379500(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp(String)
+09:21:26:862 DEBUG 20388 --- [http-nio-8085-exec-1] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1817369743810183170(Long), 100001536647(Long), 1(Integer), HMDIME 牛仔裤女2018秋冬新品 九分裤韩版弹力修身破洞抓绒翻边小脚铅笔裤 DLSF17132 蓝色 26(String), {"颜色": "蓝色", "尺码": "32"}(String), 17900(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t28525/357/413106456/209403/a5495aaa/5bf36631N0cb98da1.jpg!q70.jpg.webp(String)
+09:21:26:915 DEBUG 20388 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> DELETE http://cart-service/carts?ids=8533120&ids=1713453&ids=100001536647 HTTP/1.1
+09:21:26:915 DEBUG 20388 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] user-info: 1
+09:21:26:915 DEBUG 20388 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> END HTTP (0-byte body)
+09:21:27:052  INFO 20388 --- [nacos-grpc-client-executor-13] com.alibaba.nacos.common.remote.client   : [61303c3d-b35c-4f77-ab42-feb5d39ec3da] Receive server push request, request = NotifySubscriberRequest, requestId = 495
+09:21:27:052  INFO 20388 --- [nacos-grpc-client-executor-13] com.alibaba.nacos.common.remote.client   : [61303c3d-b35c-4f77-ab42-feb5d39ec3da] Ack server push request, request = NotifySubscriberRequest, requestId = 495
+09:21:27:125 DEBUG 20388 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- HTTP/1.1 200  (209ms)
+09:21:27:125 DEBUG 20388 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] connection: keep-alive
+09:21:27:125 DEBUG 20388 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] content-length: 0
+09:21:27:125 DEBUG 20388 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] date: Sun, 28 Jul 2024 01:21:27 GMT
+09:21:27:125 DEBUG 20388 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] keep-alive: timeout=60
+09:21:27:125 DEBUG 20388 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- END HTTP (0-byte body)
+09:21:27:140  INFO 20388 --- [http-nio-8085-exec-1] i.seata.tm.api.DefaultGlobalTransaction  : Suspending current transaction, xid = 192.168.200.128:8099:36575623703769089
+09:21:27:140  INFO 20388 --- [http-nio-8085-exec-1] i.seata.tm.api.DefaultGlobalTransaction  : [192.168.200.128:8099:36575623703769089] commit status: Committed
+09:21:27:200 DEBUG 20388 --- [http-nio-8085-exec-4] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+09:21:27:200 DEBUG 20388 --- [http-nio-8085-exec-4] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1817369743810183170(Long)
+09:21:27:206 DEBUG 20388 --- [http-nio-8085-exec-4] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+09:21:27:255  INFO 20388 --- [rpcDispatch_RMROLE_1_1_64] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.200.128:8099:36575623703769089,branchId=36575623703769091,branchType=AT,resourceId=jdbc:mysql://192.168.200.128:3306/hm-trade,applicationData={"skipCheckLock":true}
+09:21:27:255  INFO 20388 --- [rpcDispatch_RMROLE_1_1_64] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.200.128:8099:36575623703769089 36575623703769091 jdbc:mysql://192.168.200.128:3306/hm-trade {"skipCheckLock":true}
+09:21:27:256  INFO 20388 --- [rpcDispatch_RMROLE_1_1_64] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+09:21:27:268  INFO 20388 --- [rpcDispatch_RMROLE_1_2_64] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.200.128:8099:36575623703769089,branchId=36575623703769093,branchType=AT,resourceId=jdbc:mysql://192.168.200.128:3306/hm-trade,applicationData={"autoCommit":false,"skipCheckLock":true}
+09:21:27:268  INFO 20388 --- [rpcDispatch_RMROLE_1_2_64] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.200.128:8099:36575623703769089 36575623703769093 jdbc:mysql://192.168.200.128:3306/hm-trade {"autoCommit":false,"skipCheckLock":true}
+09:21:27:268  INFO 20388 --- [rpcDispatch_RMROLE_1_2_64] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+09:21:27:424  INFO 20388 --- [nacos-grpc-client-executor-14] com.alibaba.nacos.common.remote.client   : [61303c3d-b35c-4f77-ab42-feb5d39ec3da] Receive server push request, request = NotifySubscriberRequest, requestId = 496
+09:21:27:424  INFO 20388 --- [nacos-grpc-client-executor-14] com.alibaba.nacos.common.remote.client   : [61303c3d-b35c-4f77-ab42-feb5d39ec3da] Ack server push request, request = NotifySubscriberRequest, requestId = 496
+09:21:36:599  INFO 20388 --- [http-nio-8085-exec-9] i.seata.tm.api.DefaultGlobalTransaction  : Begin new global transaction [192.168.200.128:8099:36575623703769098]
+09:21:36:599 DEBUG 20388 --- [http-nio-8085-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=40305713537 HTTP/1.1
+09:21:36:599 DEBUG 20388 --- [http-nio-8085-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+09:21:36:599 DEBUG 20388 --- [http-nio-8085-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+09:21:36:606 DEBUG 20388 --- [http-nio-8085-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (6ms)
+09:21:36:606 DEBUG 20388 --- [http-nio-8085-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+09:21:36:606 DEBUG 20388 --- [http-nio-8085-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+09:21:36:606 DEBUG 20388 --- [http-nio-8085-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Sun, 28 Jul 2024 01:21:36 GMT
+09:21:36:606 DEBUG 20388 --- [http-nio-8085-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+09:21:36:606 DEBUG 20388 --- [http-nio-8085-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+09:21:36:606 DEBUG 20388 --- [http-nio-8085-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+09:21:36:606 DEBUG 20388 --- [http-nio-8085-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"40305713537","name":"【官方正品 品牌直营】奥古狮登小白鞋女秋季透气2018新款百搭韩版休闲鞋运动鞋女鞋厚底板鞋女 浅蓝【厚底】 41","price":35400,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/14147/34/2890/275451/5c225484Ebd346404/e61513be4639ee2e.jpg!q70.jpg.webp","category":"休闲鞋","brand":"奥古狮登","spec":"{\"颜色\": \"金色\", \"尺码\": \"41\"}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+09:21:36:606 DEBUG 20388 --- [http-nio-8085-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (493-byte body)
+09:21:36:608 DEBUG 20388 --- [http-nio-8085-exec-9] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
+09:21:36:608 DEBUG 20388 --- [http-nio-8085-exec-9] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1817369785413484546(Long), 35400(Integer), 3(Integer), 1(Long), 1(Integer)
+09:21:36:632 DEBUG 20388 --- [http-nio-8085-exec-9] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
+09:21:36:635 DEBUG 20388 --- [http-nio-8085-exec-9] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+09:21:36:635 DEBUG 20388 --- [http-nio-8085-exec-9] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1817369785413484546(Long), 40305713537(Long), 1(Integer), 【官方正品 品牌直营】奥古狮登小白鞋女秋季透气2018新款百搭韩版休闲鞋运动鞋女鞋厚底板鞋女 浅蓝【厚底】 41(String), {"颜色": "金色", "尺码": "41"}(String), 35400(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/14147/34/2890/275451/5c225484Ebd346404/e61513be4639ee2e.jpg!q70.jpg.webp(String)
+09:21:36:653 DEBUG 20388 --- [http-nio-8085-exec-9] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> DELETE http://cart-service/carts?ids=40305713537 HTTP/1.1
+09:21:36:653 DEBUG 20388 --- [http-nio-8085-exec-9] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] user-info: 1
+09:21:36:653 DEBUG 20388 --- [http-nio-8085-exec-9] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> END HTTP (0-byte body)
+09:21:36:677 DEBUG 20388 --- [http-nio-8085-exec-9] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- HTTP/1.1 200  (23ms)
+09:21:36:677 DEBUG 20388 --- [http-nio-8085-exec-9] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] connection: keep-alive
+09:21:36:677 DEBUG 20388 --- [http-nio-8085-exec-9] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] content-length: 0
+09:21:36:677 DEBUG 20388 --- [http-nio-8085-exec-9] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] date: Sun, 28 Jul 2024 01:21:36 GMT
+09:21:36:677 DEBUG 20388 --- [http-nio-8085-exec-9] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] keep-alive: timeout=60
+09:21:36:677 DEBUG 20388 --- [http-nio-8085-exec-9] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- END HTTP (0-byte body)
+09:21:36:689  INFO 20388 --- [http-nio-8085-exec-9] i.seata.tm.api.DefaultGlobalTransaction  : Suspending current transaction, xid = 192.168.200.128:8099:36575623703769098
+09:21:36:689  INFO 20388 --- [http-nio-8085-exec-9] i.seata.tm.api.DefaultGlobalTransaction  : [192.168.200.128:8099:36575623703769098] commit status: Committed
+09:21:36:754 DEBUG 20388 --- [http-nio-8085-exec-6] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+09:21:36:754 DEBUG 20388 --- [http-nio-8085-exec-6] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1817369785413484546(Long)
+09:21:36:756 DEBUG 20388 --- [http-nio-8085-exec-6] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+09:21:37:397  INFO 20388 --- [rpcDispatch_RMROLE_1_3_64] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.200.128:8099:36575623703769098,branchId=36575623703769100,branchType=AT,resourceId=jdbc:mysql://192.168.200.128:3306/hm-trade,applicationData={"skipCheckLock":true}
+09:21:37:397  INFO 20388 --- [rpcDispatch_RMROLE_1_3_64] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.200.128:8099:36575623703769098 36575623703769100 jdbc:mysql://192.168.200.128:3306/hm-trade {"skipCheckLock":true}
+09:21:37:397  INFO 20388 --- [rpcDispatch_RMROLE_1_3_64] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+09:21:37:402  INFO 20388 --- [rpcDispatch_RMROLE_1_4_64] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.200.128:8099:36575623703769098,branchId=36575623703769102,branchType=AT,resourceId=jdbc:mysql://192.168.200.128:3306/hm-trade,applicationData={"autoCommit":false,"skipCheckLock":true}
+09:21:37:402  INFO 20388 --- [rpcDispatch_RMROLE_1_4_64] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.200.128:8099:36575623703769098 36575623703769102 jdbc:mysql://192.168.200.128:3306/hm-trade {"autoCommit":false,"skipCheckLock":true}
+09:21:37:402  INFO 20388 --- [rpcDispatch_RMROLE_1_4_64] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+10:48:27:004  INFO 20388 --- [http-nio-8085-exec-3] i.seata.tm.api.DefaultGlobalTransaction  : Begin new global transaction [192.168.200.128:8099:36575623703769107]
+10:48:27:005 DEBUG 20388 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=40305713537 HTTP/1.1
+10:48:27:005 DEBUG 20388 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+10:48:27:005 DEBUG 20388 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+10:48:27:014 DEBUG 20388 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (9ms)
+10:48:27:015 DEBUG 20388 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+10:48:27:015 DEBUG 20388 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+10:48:27:015 DEBUG 20388 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Sun, 28 Jul 2024 02:48:27 GMT
+10:48:27:015 DEBUG 20388 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+10:48:27:015 DEBUG 20388 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+10:48:27:015 DEBUG 20388 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+10:48:27:015 DEBUG 20388 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"40305713537","name":"【官方正品 品牌直营】奥古狮登小白鞋女秋季透气2018新款百搭韩版休闲鞋运动鞋女鞋厚底板鞋女 浅蓝【厚底】 41","price":35400,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/14147/34/2890/275451/5c225484Ebd346404/e61513be4639ee2e.jpg!q70.jpg.webp","category":"休闲鞋","brand":"奥古狮登","spec":"{\"颜色\": \"金色\", \"尺码\": \"41\"}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+10:48:27:015 DEBUG 20388 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (493-byte body)
+10:48:27:018 DEBUG 20388 --- [http-nio-8085-exec-3] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
+10:48:27:037 DEBUG 20388 --- [http-nio-8085-exec-3] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1817391639494737922(Long), 35400(Integer), 3(Integer), 1(Long), 1(Integer)
+10:48:27:057 DEBUG 20388 --- [http-nio-8085-exec-3] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
+10:48:27:058 DEBUG 20388 --- [http-nio-8085-exec-3] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+10:48:27:059 DEBUG 20388 --- [http-nio-8085-exec-3] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1817391639494737922(Long), 40305713537(Long), 1(Integer), 【官方正品 品牌直营】奥古狮登小白鞋女秋季透气2018新款百搭韩版休闲鞋运动鞋女鞋厚底板鞋女 浅蓝【厚底】 41(String), {"颜色": "金色", "尺码": "41"}(String), 35400(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/14147/34/2890/275451/5c225484Ebd346404/e61513be4639ee2e.jpg!q70.jpg.webp(String)
+10:48:27:084 DEBUG 20388 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> DELETE http://cart-service/carts?ids=40305713537 HTTP/1.1
+10:48:27:084 DEBUG 20388 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] user-info: 1
+10:48:27:084 DEBUG 20388 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> END HTTP (0-byte body)
+10:48:27:111 DEBUG 20388 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- HTTP/1.1 200  (27ms)
+10:48:27:111 DEBUG 20388 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] connection: keep-alive
+10:48:27:111 DEBUG 20388 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] content-length: 0
+10:48:27:111 DEBUG 20388 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] date: Sun, 28 Jul 2024 02:48:27 GMT
+10:48:27:111 DEBUG 20388 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] keep-alive: timeout=60
+10:48:27:111 DEBUG 20388 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- END HTTP (0-byte body)
+10:48:27:124  INFO 20388 --- [http-nio-8085-exec-3] i.seata.tm.api.DefaultGlobalTransaction  : Suspending current transaction, xid = 192.168.200.128:8099:36575623703769107
+10:48:27:124  INFO 20388 --- [http-nio-8085-exec-3] i.seata.tm.api.DefaultGlobalTransaction  : [192.168.200.128:8099:36575623703769107] commit status: Committed
+10:48:27:175 DEBUG 20388 --- [http-nio-8085-exec-7] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+10:48:27:175 DEBUG 20388 --- [http-nio-8085-exec-7] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1817391639494737922(Long)
+10:48:27:177 DEBUG 20388 --- [http-nio-8085-exec-7] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+10:48:27:353  INFO 20388 --- [rpcDispatch_RMROLE_1_5_64] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.200.128:8099:36575623703769107,branchId=36575623703769109,branchType=AT,resourceId=jdbc:mysql://192.168.200.128:3306/hm-trade,applicationData={"skipCheckLock":true}
+10:48:27:354  INFO 20388 --- [rpcDispatch_RMROLE_1_5_64] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.200.128:8099:36575623703769107 36575623703769109 jdbc:mysql://192.168.200.128:3306/hm-trade {"skipCheckLock":true}
+10:48:27:354  INFO 20388 --- [rpcDispatch_RMROLE_1_5_64] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+10:48:27:359  INFO 20388 --- [rpcDispatch_RMROLE_1_6_64] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.200.128:8099:36575623703769107,branchId=36575623703769111,branchType=AT,resourceId=jdbc:mysql://192.168.200.128:3306/hm-trade,applicationData={"autoCommit":false,"skipCheckLock":true}
+10:48:27:359  INFO 20388 --- [rpcDispatch_RMROLE_1_6_64] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.200.128:8099:36575623703769107 36575623703769111 jdbc:mysql://192.168.200.128:3306/hm-trade {"autoCommit":false,"skipCheckLock":true}
+10:48:27:359  INFO 20388 --- [rpcDispatch_RMROLE_1_6_64] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+10:54:18:712  INFO 20388 --- [http-nio-8085-exec-2] i.seata.tm.api.DefaultGlobalTransaction  : Begin new global transaction [192.168.200.128:8099:36575623703769114]
+10:54:18:713 DEBUG 20388 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=8533120 HTTP/1.1
+10:54:18:713 DEBUG 20388 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 2
+10:54:18:713 DEBUG 20388 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+10:54:18:721 DEBUG 20388 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (7ms)
+10:54:18:721 DEBUG 20388 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+10:54:18:721 DEBUG 20388 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+10:54:18:721 DEBUG 20388 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Sun, 28 Jul 2024 02:54:18 GMT
+10:54:18:721 DEBUG 20388 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+10:54:18:721 DEBUG 20388 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+10:54:18:721 DEBUG 20388 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+10:54:18:721 DEBUG 20388 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"8533120","name":"海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视","price":379500,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp","category":"曲面电视","brand":"海尔","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+10:54:18:721 DEBUG 20388 --- [http-nio-8085-exec-2] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (384-byte body)
+10:54:18:723 DEBUG 20388 --- [http-nio-8085-exec-2] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
+10:54:18:723 DEBUG 20388 --- [http-nio-8085-exec-2] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1817393114635649025(Long), 379500(Integer), 3(Integer), 2(Long), 1(Integer)
+10:54:18:740 DEBUG 20388 --- [http-nio-8085-exec-2] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
+10:54:18:742 DEBUG 20388 --- [http-nio-8085-exec-2] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+10:54:18:742 DEBUG 20388 --- [http-nio-8085-exec-2] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1817393114635649025(Long), 8533120(Long), 1(Integer), 海尔 （Haier ）LQ65H31 65英寸 4K曲面人工智能全面屏超高清LED液晶电视(String), {}(String), 379500(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/2851/14/13998/101463/5bd9723cE81b2c299/1bfdf2d1628648e4.jpg!q70.jpg.webp(String)
+10:54:18:762 DEBUG 20388 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> DELETE http://cart-service/carts?ids=8533120 HTTP/1.1
+10:54:18:762 DEBUG 20388 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] user-info: 2
+10:54:18:762 DEBUG 20388 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> END HTTP (0-byte body)
+10:54:18:795 DEBUG 20388 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- HTTP/1.1 200  (32ms)
+10:54:18:795 DEBUG 20388 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] connection: keep-alive
+10:54:18:795 DEBUG 20388 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] content-length: 0
+10:54:18:796 DEBUG 20388 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] date: Sun, 28 Jul 2024 02:54:18 GMT
+10:54:18:796 DEBUG 20388 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] keep-alive: timeout=60
+10:54:18:796 DEBUG 20388 --- [http-nio-8085-exec-2] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- END HTTP (0-byte body)
+10:54:18:805  INFO 20388 --- [http-nio-8085-exec-2] i.seata.tm.api.DefaultGlobalTransaction  : Suspending current transaction, xid = 192.168.200.128:8099:36575623703769114
+10:54:18:805  INFO 20388 --- [http-nio-8085-exec-2] i.seata.tm.api.DefaultGlobalTransaction  : [192.168.200.128:8099:36575623703769114] commit status: Committed
+10:54:18:859 DEBUG 20388 --- [http-nio-8085-exec-10] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+10:54:18:859 DEBUG 20388 --- [http-nio-8085-exec-10] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1817393114635649025(Long)
+10:54:18:861 DEBUG 20388 --- [http-nio-8085-exec-10] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+10:54:19:049  INFO 20388 --- [rpcDispatch_RMROLE_1_7_64] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.200.128:8099:36575623703769114,branchId=36575623703769116,branchType=AT,resourceId=jdbc:mysql://192.168.200.128:3306/hm-trade,applicationData={"skipCheckLock":true}
+10:54:19:049  INFO 20388 --- [rpcDispatch_RMROLE_1_7_64] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.200.128:8099:36575623703769114 36575623703769116 jdbc:mysql://192.168.200.128:3306/hm-trade {"skipCheckLock":true}
+10:54:19:049  INFO 20388 --- [rpcDispatch_RMROLE_1_7_64] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+10:54:19:054  INFO 20388 --- [rpcDispatch_RMROLE_1_8_64] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.200.128:8099:36575623703769114,branchId=36575623703769118,branchType=AT,resourceId=jdbc:mysql://192.168.200.128:3306/hm-trade,applicationData={"autoCommit":false,"skipCheckLock":true}
+10:54:19:054  INFO 20388 --- [rpcDispatch_RMROLE_1_8_64] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.200.128:8099:36575623703769114 36575623703769118 jdbc:mysql://192.168.200.128:3306/hm-trade {"autoCommit":false,"skipCheckLock":true}
+10:54:19:054  INFO 20388 --- [rpcDispatch_RMROLE_1_8_64] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+10:54:38:159  INFO 20388 --- [http-nio-8085-exec-1] i.seata.tm.api.DefaultGlobalTransaction  : Begin new global transaction [192.168.200.128:8099:36575623703769123]
+10:54:38:160 DEBUG 20388 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=40305713537 HTTP/1.1
+10:54:38:160 DEBUG 20388 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 2
+10:54:38:160 DEBUG 20388 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+10:54:38:173 DEBUG 20388 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (13ms)
+10:54:38:173 DEBUG 20388 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+10:54:38:173 DEBUG 20388 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+10:54:38:173 DEBUG 20388 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Sun, 28 Jul 2024 02:54:38 GMT
+10:54:38:173 DEBUG 20388 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+10:54:38:173 DEBUG 20388 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+10:54:38:173 DEBUG 20388 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+10:54:38:173 DEBUG 20388 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"40305713537","name":"【官方正品 品牌直营】奥古狮登小白鞋女秋季透气2018新款百搭韩版休闲鞋运动鞋女鞋厚底板鞋女 浅蓝【厚底】 41","price":35400,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/14147/34/2890/275451/5c225484Ebd346404/e61513be4639ee2e.jpg!q70.jpg.webp","category":"休闲鞋","brand":"奥古狮登","spec":"{\"颜色\": \"金色\", \"尺码\": \"41\"}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+10:54:38:174 DEBUG 20388 --- [http-nio-8085-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (493-byte body)
+10:54:38:175 DEBUG 20388 --- [http-nio-8085-exec-1] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
+10:54:38:176 DEBUG 20388 --- [http-nio-8085-exec-1] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1817393196206473217(Long), 35400(Integer), 3(Integer), 2(Long), 1(Integer)
+10:54:38:200 DEBUG 20388 --- [http-nio-8085-exec-1] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
+10:54:38:201 DEBUG 20388 --- [http-nio-8085-exec-1] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+10:54:38:202 DEBUG 20388 --- [http-nio-8085-exec-1] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1817393196206473217(Long), 40305713537(Long), 1(Integer), 【官方正品 品牌直营】奥古狮登小白鞋女秋季透气2018新款百搭韩版休闲鞋运动鞋女鞋厚底板鞋女 浅蓝【厚底】 41(String), {"颜色": "金色", "尺码": "41"}(String), 35400(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/14147/34/2890/275451/5c225484Ebd346404/e61513be4639ee2e.jpg!q70.jpg.webp(String)
+10:54:38:219 DEBUG 20388 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> DELETE http://cart-service/carts?ids=40305713537 HTTP/1.1
+10:54:38:219 DEBUG 20388 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] user-info: 2
+10:54:38:219 DEBUG 20388 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> END HTTP (0-byte body)
+10:54:38:246 DEBUG 20388 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- HTTP/1.1 200  (26ms)
+10:54:38:246 DEBUG 20388 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] connection: keep-alive
+10:54:38:246 DEBUG 20388 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] content-length: 0
+10:54:38:246 DEBUG 20388 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] date: Sun, 28 Jul 2024 02:54:38 GMT
+10:54:38:246 DEBUG 20388 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] keep-alive: timeout=60
+10:54:38:246 DEBUG 20388 --- [http-nio-8085-exec-1] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- END HTTP (0-byte body)
+10:54:38:257  INFO 20388 --- [http-nio-8085-exec-1] i.seata.tm.api.DefaultGlobalTransaction  : Suspending current transaction, xid = 192.168.200.128:8099:36575623703769123
+10:54:38:257  INFO 20388 --- [http-nio-8085-exec-1] i.seata.tm.api.DefaultGlobalTransaction  : [192.168.200.128:8099:36575623703769123] commit status: Committed
+10:54:38:321 DEBUG 20388 --- [http-nio-8085-exec-4] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+10:54:38:322 DEBUG 20388 --- [http-nio-8085-exec-4] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1817393196206473217(Long)
+10:54:38:322 DEBUG 20388 --- [http-nio-8085-exec-4] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+10:54:38:433  INFO 20388 --- [rpcDispatch_RMROLE_1_9_64] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.200.128:8099:36575623703769123,branchId=36575623703769125,branchType=AT,resourceId=jdbc:mysql://192.168.200.128:3306/hm-trade,applicationData={"skipCheckLock":true}
+10:54:38:433  INFO 20388 --- [rpcDispatch_RMROLE_1_9_64] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.200.128:8099:36575623703769123 36575623703769125 jdbc:mysql://192.168.200.128:3306/hm-trade {"skipCheckLock":true}
+10:54:38:433  INFO 20388 --- [rpcDispatch_RMROLE_1_9_64] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+10:54:38:437  INFO 20388 --- [rpcDispatch_RMROLE_1_10_64] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.200.128:8099:36575623703769123,branchId=36575623703769127,branchType=AT,resourceId=jdbc:mysql://192.168.200.128:3306/hm-trade,applicationData={"autoCommit":false,"skipCheckLock":true}
+10:54:38:437  INFO 20388 --- [rpcDispatch_RMROLE_1_10_64] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.200.128:8099:36575623703769123 36575623703769127 jdbc:mysql://192.168.200.128:3306/hm-trade {"autoCommit":false,"skipCheckLock":true}
+10:54:38:437  INFO 20388 --- [rpcDispatch_RMROLE_1_10_64] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+10:55:10:605 DEBUG 20388 --- [http-nio-8085-exec-9] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+10:55:10:606 DEBUG 20388 --- [http-nio-8085-exec-9] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1817393196206473217(Long)
+10:55:10:607 DEBUG 20388 --- [http-nio-8085-exec-9] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+10:55:19:981  INFO 20388 --- [http-nio-8085-exec-6] i.seata.tm.api.DefaultGlobalTransaction  : Begin new global transaction [192.168.200.128:8099:36575623703769132]
+10:55:19:983 DEBUG 20388 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=40305713537 HTTP/1.1
+10:55:19:983 DEBUG 20388 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 2
+10:55:19:983 DEBUG 20388 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+10:55:19:989 DEBUG 20388 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (6ms)
+10:55:19:989 DEBUG 20388 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+10:55:19:989 DEBUG 20388 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+10:55:19:989 DEBUG 20388 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Sun, 28 Jul 2024 02:55:19 GMT
+10:55:19:989 DEBUG 20388 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+10:55:19:989 DEBUG 20388 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+10:55:19:989 DEBUG 20388 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+10:55:19:989 DEBUG 20388 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"40305713537","name":"【官方正品 品牌直营】奥古狮登小白鞋女秋季透气2018新款百搭韩版休闲鞋运动鞋女鞋厚底板鞋女 浅蓝【厚底】 41","price":35400,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/14147/34/2890/275451/5c225484Ebd346404/e61513be4639ee2e.jpg!q70.jpg.webp","category":"休闲鞋","brand":"奥古狮登","spec":"{\"颜色\": \"金色\", \"尺码\": \"41\"}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+10:55:19:989 DEBUG 20388 --- [http-nio-8085-exec-6] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (493-byte body)
+10:55:19:991 DEBUG 20388 --- [http-nio-8085-exec-6] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
+10:55:19:991 DEBUG 20388 --- [http-nio-8085-exec-6] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1817393371612266498(Long), 35400(Integer), 3(Integer), 2(Long), 1(Integer)
+10:55:20:010 DEBUG 20388 --- [http-nio-8085-exec-6] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
+10:55:20:011 DEBUG 20388 --- [http-nio-8085-exec-6] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+10:55:20:011 DEBUG 20388 --- [http-nio-8085-exec-6] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1817393371612266498(Long), 40305713537(Long), 1(Integer), 【官方正品 品牌直营】奥古狮登小白鞋女秋季透气2018新款百搭韩版休闲鞋运动鞋女鞋厚底板鞋女 浅蓝【厚底】 41(String), {"颜色": "金色", "尺码": "41"}(String), 35400(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/14147/34/2890/275451/5c225484Ebd346404/e61513be4639ee2e.jpg!q70.jpg.webp(String)
+10:55:20:032 DEBUG 20388 --- [http-nio-8085-exec-6] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> DELETE http://cart-service/carts?ids=40305713537 HTTP/1.1
+10:55:20:032 DEBUG 20388 --- [http-nio-8085-exec-6] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] user-info: 2
+10:55:20:032 DEBUG 20388 --- [http-nio-8085-exec-6] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> END HTTP (0-byte body)
+10:55:20:069 DEBUG 20388 --- [http-nio-8085-exec-6] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- HTTP/1.1 200  (36ms)
+10:55:20:069 DEBUG 20388 --- [http-nio-8085-exec-6] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] connection: keep-alive
+10:55:20:069 DEBUG 20388 --- [http-nio-8085-exec-6] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] content-length: 0
+10:55:20:069 DEBUG 20388 --- [http-nio-8085-exec-6] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] date: Sun, 28 Jul 2024 02:55:20 GMT
+10:55:20:069 DEBUG 20388 --- [http-nio-8085-exec-6] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] keep-alive: timeout=60
+10:55:20:069 DEBUG 20388 --- [http-nio-8085-exec-6] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- END HTTP (0-byte body)
+10:55:20:076  INFO 20388 --- [http-nio-8085-exec-6] i.seata.tm.api.DefaultGlobalTransaction  : Suspending current transaction, xid = 192.168.200.128:8099:36575623703769132
+10:55:20:076  INFO 20388 --- [http-nio-8085-exec-6] i.seata.tm.api.DefaultGlobalTransaction  : [192.168.200.128:8099:36575623703769132] commit status: Committed
+10:55:20:122 DEBUG 20388 --- [http-nio-8085-exec-5] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+10:55:20:122 DEBUG 20388 --- [http-nio-8085-exec-5] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1817393371612266498(Long)
+10:55:20:124 DEBUG 20388 --- [http-nio-8085-exec-5] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+10:55:20:897  INFO 20388 --- [rpcDispatch_RMROLE_1_11_64] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.200.128:8099:36575623703769132,branchId=36575623703769134,branchType=AT,resourceId=jdbc:mysql://192.168.200.128:3306/hm-trade,applicationData={"skipCheckLock":true}
+10:55:20:897  INFO 20388 --- [rpcDispatch_RMROLE_1_11_64] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.200.128:8099:36575623703769132 36575623703769134 jdbc:mysql://192.168.200.128:3306/hm-trade {"skipCheckLock":true}
+10:55:20:897  INFO 20388 --- [rpcDispatch_RMROLE_1_11_64] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+10:55:20:901  INFO 20388 --- [rpcDispatch_RMROLE_1_12_64] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.200.128:8099:36575623703769132,branchId=36575623703769136,branchType=AT,resourceId=jdbc:mysql://192.168.200.128:3306/hm-trade,applicationData={"autoCommit":false,"skipCheckLock":true}
+10:55:20:901  INFO 20388 --- [rpcDispatch_RMROLE_1_12_64] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.200.128:8099:36575623703769132 36575623703769136 jdbc:mysql://192.168.200.128:3306/hm-trade {"autoCommit":false,"skipCheckLock":true}
+10:55:20:901  INFO 20388 --- [rpcDispatch_RMROLE_1_12_64] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+10:55:51:330  INFO 20388 --- [http-nio-8085-exec-3] i.seata.tm.api.DefaultGlobalTransaction  : Begin new global transaction [192.168.200.128:8099:36575623703769141]
+10:55:51:331 DEBUG 20388 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=40305713537 HTTP/1.1
+10:55:51:331 DEBUG 20388 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 2
+10:55:51:331 DEBUG 20388 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+10:55:51:337 DEBUG 20388 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (6ms)
+10:55:51:337 DEBUG 20388 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+10:55:51:338 DEBUG 20388 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+10:55:51:338 DEBUG 20388 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Sun, 28 Jul 2024 02:55:51 GMT
+10:55:51:338 DEBUG 20388 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+10:55:51:338 DEBUG 20388 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+10:55:51:338 DEBUG 20388 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+10:55:51:338 DEBUG 20388 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"40305713537","name":"【官方正品 品牌直营】奥古狮登小白鞋女秋季透气2018新款百搭韩版休闲鞋运动鞋女鞋厚底板鞋女 浅蓝【厚底】 41","price":35400,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/14147/34/2890/275451/5c225484Ebd346404/e61513be4639ee2e.jpg!q70.jpg.webp","category":"休闲鞋","brand":"奥古狮登","spec":"{\"颜色\": \"金色\", \"尺码\": \"41\"}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+10:55:51:338 DEBUG 20388 --- [http-nio-8085-exec-3] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (493-byte body)
+10:55:51:339 DEBUG 20388 --- [http-nio-8085-exec-3] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
+10:55:51:339 DEBUG 20388 --- [http-nio-8085-exec-3] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1817393503086919681(Long), 35400(Integer), 3(Integer), 2(Long), 1(Integer)
+10:55:51:362 DEBUG 20388 --- [http-nio-8085-exec-3] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
+10:55:51:364 DEBUG 20388 --- [http-nio-8085-exec-3] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+10:55:51:364 DEBUG 20388 --- [http-nio-8085-exec-3] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1817393503086919681(Long), 40305713537(Long), 1(Integer), 【官方正品 品牌直营】奥古狮登小白鞋女秋季透气2018新款百搭韩版休闲鞋运动鞋女鞋厚底板鞋女 浅蓝【厚底】 41(String), {"颜色": "金色", "尺码": "41"}(String), 35400(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/14147/34/2890/275451/5c225484Ebd346404/e61513be4639ee2e.jpg!q70.jpg.webp(String)
+10:55:51:380 DEBUG 20388 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> DELETE http://cart-service/carts?ids=40305713537 HTTP/1.1
+10:55:51:380 DEBUG 20388 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] user-info: 2
+10:55:51:380 DEBUG 20388 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> END HTTP (0-byte body)
+10:55:51:410 DEBUG 20388 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- HTTP/1.1 200  (29ms)
+10:55:51:410 DEBUG 20388 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] connection: keep-alive
+10:55:51:410 DEBUG 20388 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] content-length: 0
+10:55:51:410 DEBUG 20388 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] date: Sun, 28 Jul 2024 02:55:51 GMT
+10:55:51:410 DEBUG 20388 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] keep-alive: timeout=60
+10:55:51:410 DEBUG 20388 --- [http-nio-8085-exec-3] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- END HTTP (0-byte body)
+10:55:51:418  INFO 20388 --- [http-nio-8085-exec-3] i.seata.tm.api.DefaultGlobalTransaction  : Suspending current transaction, xid = 192.168.200.128:8099:36575623703769141
+10:55:51:418  INFO 20388 --- [http-nio-8085-exec-3] i.seata.tm.api.DefaultGlobalTransaction  : [192.168.200.128:8099:36575623703769141] commit status: Committed
+10:55:51:466 DEBUG 20388 --- [http-nio-8085-exec-7] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+10:55:51:466 DEBUG 20388 --- [http-nio-8085-exec-7] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1817393503086919681(Long)
+10:55:51:467 DEBUG 20388 --- [http-nio-8085-exec-7] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+10:55:52:282  INFO 20388 --- [rpcDispatch_RMROLE_1_13_64] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.200.128:8099:36575623703769141,branchId=36575623703769143,branchType=AT,resourceId=jdbc:mysql://192.168.200.128:3306/hm-trade,applicationData={"skipCheckLock":true}
+10:55:52:282  INFO 20388 --- [rpcDispatch_RMROLE_1_13_64] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.200.128:8099:36575623703769141 36575623703769143 jdbc:mysql://192.168.200.128:3306/hm-trade {"skipCheckLock":true}
+10:55:52:282  INFO 20388 --- [rpcDispatch_RMROLE_1_13_64] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+10:55:52:286  INFO 20388 --- [rpcDispatch_RMROLE_1_14_64] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.200.128:8099:36575623703769141,branchId=36575623703769146,branchType=AT,resourceId=jdbc:mysql://192.168.200.128:3306/hm-trade,applicationData={"autoCommit":false,"skipCheckLock":true}
+10:55:52:286  INFO 20388 --- [rpcDispatch_RMROLE_1_14_64] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.200.128:8099:36575623703769141 36575623703769146 jdbc:mysql://192.168.200.128:3306/hm-trade {"autoCommit":false,"skipCheckLock":true}
+10:55:52:286  INFO 20388 --- [rpcDispatch_RMROLE_1_14_64] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+10:56:16:966  INFO 20388 --- [http-nio-8085-exec-8] i.seata.tm.api.DefaultGlobalTransaction  : Begin new global transaction [192.168.200.128:8099:36575623703769151]
+10:56:16:966 DEBUG 20388 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=40305713537 HTTP/1.1
+10:56:16:966 DEBUG 20388 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 2
+10:56:16:966 DEBUG 20388 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+10:56:16:971 DEBUG 20388 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (5ms)
+10:56:16:971 DEBUG 20388 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+10:56:16:971 DEBUG 20388 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+10:56:16:971 DEBUG 20388 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Sun, 28 Jul 2024 02:56:16 GMT
+10:56:16:972 DEBUG 20388 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+10:56:16:972 DEBUG 20388 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+10:56:16:972 DEBUG 20388 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+10:56:16:972 DEBUG 20388 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"40305713537","name":"【官方正品 品牌直营】奥古狮登小白鞋女秋季透气2018新款百搭韩版休闲鞋运动鞋女鞋厚底板鞋女 浅蓝【厚底】 41","price":35400,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/14147/34/2890/275451/5c225484Ebd346404/e61513be4639ee2e.jpg!q70.jpg.webp","category":"休闲鞋","brand":"奥古狮登","spec":"{\"颜色\": \"金色\", \"尺码\": \"41\"}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+10:56:16:972 DEBUG 20388 --- [http-nio-8085-exec-8] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (493-byte body)
+10:56:16:973 DEBUG 20388 --- [http-nio-8085-exec-8] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
+10:56:16:974 DEBUG 20388 --- [http-nio-8085-exec-8] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1817393610603708417(Long), 35400(Integer), 3(Integer), 2(Long), 1(Integer)
+10:56:16:991 DEBUG 20388 --- [http-nio-8085-exec-8] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
+10:56:16:991 DEBUG 20388 --- [http-nio-8085-exec-8] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+10:56:16:992 DEBUG 20388 --- [http-nio-8085-exec-8] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1817393610603708417(Long), 40305713537(Long), 1(Integer), 【官方正品 品牌直营】奥古狮登小白鞋女秋季透气2018新款百搭韩版休闲鞋运动鞋女鞋厚底板鞋女 浅蓝【厚底】 41(String), {"颜色": "金色", "尺码": "41"}(String), 35400(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/14147/34/2890/275451/5c225484Ebd346404/e61513be4639ee2e.jpg!q70.jpg.webp(String)
+10:56:17:007 DEBUG 20388 --- [http-nio-8085-exec-8] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> DELETE http://cart-service/carts?ids=40305713537 HTTP/1.1
+10:56:17:007 DEBUG 20388 --- [http-nio-8085-exec-8] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] user-info: 2
+10:56:17:007 DEBUG 20388 --- [http-nio-8085-exec-8] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> END HTTP (0-byte body)
+10:56:17:030 DEBUG 20388 --- [http-nio-8085-exec-8] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- HTTP/1.1 200  (23ms)
+10:56:17:031 DEBUG 20388 --- [http-nio-8085-exec-8] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] connection: keep-alive
+10:56:17:031 DEBUG 20388 --- [http-nio-8085-exec-8] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] content-length: 0
+10:56:17:031 DEBUG 20388 --- [http-nio-8085-exec-8] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] date: Sun, 28 Jul 2024 02:56:17 GMT
+10:56:17:031 DEBUG 20388 --- [http-nio-8085-exec-8] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] keep-alive: timeout=60
+10:56:17:031 DEBUG 20388 --- [http-nio-8085-exec-8] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- END HTTP (0-byte body)
+10:56:17:045  INFO 20388 --- [http-nio-8085-exec-8] i.seata.tm.api.DefaultGlobalTransaction  : Suspending current transaction, xid = 192.168.200.128:8099:36575623703769151
+10:56:17:045  INFO 20388 --- [http-nio-8085-exec-8] i.seata.tm.api.DefaultGlobalTransaction  : [192.168.200.128:8099:36575623703769151] commit status: Committed
+10:56:17:129 DEBUG 20388 --- [http-nio-8085-exec-2] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+10:56:17:129 DEBUG 20388 --- [http-nio-8085-exec-2] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1817393610603708417(Long)
+10:56:17:131 DEBUG 20388 --- [http-nio-8085-exec-2] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+10:56:17:207  INFO 20388 --- [rpcDispatch_RMROLE_1_15_64] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.200.128:8099:36575623703769151,branchId=36575623703769153,branchType=AT,resourceId=jdbc:mysql://192.168.200.128:3306/hm-trade,applicationData={"skipCheckLock":true}
+10:56:17:207  INFO 20388 --- [rpcDispatch_RMROLE_1_15_64] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.200.128:8099:36575623703769151 36575623703769153 jdbc:mysql://192.168.200.128:3306/hm-trade {"skipCheckLock":true}
+10:56:17:207  INFO 20388 --- [rpcDispatch_RMROLE_1_15_64] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+10:56:17:210  INFO 20388 --- [rpcDispatch_RMROLE_1_16_64] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.200.128:8099:36575623703769151,branchId=36575623703769155,branchType=AT,resourceId=jdbc:mysql://192.168.200.128:3306/hm-trade,applicationData={"autoCommit":false,"skipCheckLock":true}
+10:56:17:210  INFO 20388 --- [rpcDispatch_RMROLE_1_16_64] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.200.128:8099:36575623703769151 36575623703769155 jdbc:mysql://192.168.200.128:3306/hm-trade {"autoCommit":false,"skipCheckLock":true}
+10:56:17:210  INFO 20388 --- [rpcDispatch_RMROLE_1_16_64] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+11:02:53:745 DEBUG 20388 --- [http-nio-8085-exec-1] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+11:02:53:745 DEBUG 20388 --- [http-nio-8085-exec-1] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1817393610603708417(Long)
+11:02:53:746 DEBUG 20388 --- [http-nio-8085-exec-1] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+11:03:04:951  INFO 20388 --- [http-nio-8085-exec-4] i.seata.tm.api.DefaultGlobalTransaction  : Begin new global transaction [192.168.200.128:8099:36575623703769160]
+11:03:04:952 DEBUG 20388 --- [http-nio-8085-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=40305713537 HTTP/1.1
+11:03:04:952 DEBUG 20388 --- [http-nio-8085-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 2
+11:03:04:952 DEBUG 20388 --- [http-nio-8085-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+11:03:04:959 DEBUG 20388 --- [http-nio-8085-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (7ms)
+11:03:04:959 DEBUG 20388 --- [http-nio-8085-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+11:03:04:959 DEBUG 20388 --- [http-nio-8085-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+11:03:04:959 DEBUG 20388 --- [http-nio-8085-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Sun, 28 Jul 2024 03:03:04 GMT
+11:03:04:959 DEBUG 20388 --- [http-nio-8085-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+11:03:04:959 DEBUG 20388 --- [http-nio-8085-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+11:03:04:959 DEBUG 20388 --- [http-nio-8085-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+11:03:04:959 DEBUG 20388 --- [http-nio-8085-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"40305713537","name":"【官方正品 品牌直营】奥古狮登小白鞋女秋季透气2018新款百搭韩版休闲鞋运动鞋女鞋厚底板鞋女 浅蓝【厚底】 41","price":35400,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/14147/34/2890/275451/5c225484Ebd346404/e61513be4639ee2e.jpg!q70.jpg.webp","category":"休闲鞋","brand":"奥古狮登","spec":"{\"颜色\": \"金色\", \"尺码\": \"41\"}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+11:03:04:960 DEBUG 20388 --- [http-nio-8085-exec-4] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (493-byte body)
+11:03:04:961 DEBUG 20388 --- [http-nio-8085-exec-4] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
+11:03:04:961 DEBUG 20388 --- [http-nio-8085-exec-4] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1817395321862963202(Long), 35400(Integer), 3(Integer), 2(Long), 1(Integer)
+11:03:04:981 DEBUG 20388 --- [http-nio-8085-exec-4] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
+11:03:04:982 DEBUG 20388 --- [http-nio-8085-exec-4] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+11:03:04:982 DEBUG 20388 --- [http-nio-8085-exec-4] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1817395321862963202(Long), 40305713537(Long), 1(Integer), 【官方正品 品牌直营】奥古狮登小白鞋女秋季透气2018新款百搭韩版休闲鞋运动鞋女鞋厚底板鞋女 浅蓝【厚底】 41(String), {"颜色": "金色", "尺码": "41"}(String), 35400(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t1/14147/34/2890/275451/5c225484Ebd346404/e61513be4639ee2e.jpg!q70.jpg.webp(String)
+11:03:04:999 DEBUG 20388 --- [http-nio-8085-exec-4] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> DELETE http://cart-service/carts?ids=40305713537 HTTP/1.1
+11:03:04:999 DEBUG 20388 --- [http-nio-8085-exec-4] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] user-info: 2
+11:03:04:999 DEBUG 20388 --- [http-nio-8085-exec-4] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] ---> END HTTP (0-byte body)
+11:03:05:007 DEBUG 20388 --- [http-nio-8085-exec-4] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- HTTP/1.1 200  (7ms)
+11:03:05:007 DEBUG 20388 --- [http-nio-8085-exec-4] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] connection: keep-alive
+11:03:05:007 DEBUG 20388 --- [http-nio-8085-exec-4] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] content-length: 0
+11:03:05:007 DEBUG 20388 --- [http-nio-8085-exec-4] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] date: Sun, 28 Jul 2024 03:03:05 GMT
+11:03:05:007 DEBUG 20388 --- [http-nio-8085-exec-4] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] keep-alive: timeout=60
+11:03:05:007 DEBUG 20388 --- [http-nio-8085-exec-4] com.hmall.api.client.CartClient          : [CartClient#deleteCartItemByIds] <--- END HTTP (0-byte body)
+11:03:05:016  INFO 20388 --- [http-nio-8085-exec-4] i.seata.tm.api.DefaultGlobalTransaction  : Suspending current transaction, xid = 192.168.200.128:8099:36575623703769160
+11:03:05:016  INFO 20388 --- [http-nio-8085-exec-4] i.seata.tm.api.DefaultGlobalTransaction  : [192.168.200.128:8099:36575623703769160] commit status: Committed
+11:03:05:095 DEBUG 20388 --- [http-nio-8085-exec-9] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+11:03:05:095 DEBUG 20388 --- [http-nio-8085-exec-9] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1817395321862963202(Long)
+11:03:05:096 DEBUG 20388 --- [http-nio-8085-exec-9] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+11:03:05:213  INFO 20388 --- [rpcDispatch_RMROLE_1_17_64] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.200.128:8099:36575623703769160,branchId=36575623703769162,branchType=AT,resourceId=jdbc:mysql://192.168.200.128:3306/hm-trade,applicationData={"skipCheckLock":true}
+11:03:05:213  INFO 20388 --- [rpcDispatch_RMROLE_1_17_64] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.200.128:8099:36575623703769160 36575623703769162 jdbc:mysql://192.168.200.128:3306/hm-trade {"skipCheckLock":true}
+11:03:05:213  INFO 20388 --- [rpcDispatch_RMROLE_1_17_64] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+11:03:05:218  INFO 20388 --- [rpcDispatch_RMROLE_1_18_64] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=192.168.200.128:8099:36575623703769160,branchId=36575623703769164,branchType=AT,resourceId=jdbc:mysql://192.168.200.128:3306/hm-trade,applicationData={"autoCommit":false,"skipCheckLock":true}
+11:03:05:218  INFO 20388 --- [rpcDispatch_RMROLE_1_18_64] io.seata.rm.AbstractRMHandler            : Branch committing: 192.168.200.128:8099:36575623703769160 36575623703769164 jdbc:mysql://192.168.200.128:3306/hm-trade {"autoCommit":false,"skipCheckLock":true}
+11:03:05:218  INFO 20388 --- [rpcDispatch_RMROLE_1_18_64] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed

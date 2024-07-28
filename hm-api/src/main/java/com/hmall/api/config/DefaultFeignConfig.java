@@ -40,9 +40,9 @@ public class DefaultFeignConfig {
     public ItemClientFallback itemClientFallback() {
         return new ItemClientFallback();
     }
-    //购物车服务的
-    public CartClientFallback cartClientFallback() {
-        return  new CartClientFallback();
-    }
+    // //购物车服务的
+    // public CartClientFallback cartClientFallback() {
+    //     return  new CartClientFallback();
+    // }
 
 }

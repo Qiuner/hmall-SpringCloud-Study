@@ -234,3 +234,63 @@
 10:51:23:126  INFO 36168 --- [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@34fdde24[Running, pool size = 6, active threads = 0, queued tasks = 0, completed tasks = 54]
 10:51:23:129  INFO 36168 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 10:51:23:141  INFO 36168 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+10:51:29:459  INFO 35012 --- [main] com.hmall.user.UserApplication           : Starting UserApplication using Java 11.0.23 on Qiuner with PID 35012 (D:\Code\hmall-SpringCloud-Study\user-service\target\classes started by Qiuner in D:\Code\hmall-SpringCloud-Study)
+10:51:29:460 DEBUG 35012 --- [main] com.hmall.user.UserApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+10:51:29:460  INFO 35012 --- [main] com.hmall.user.UserApplication           : The following 1 profile is active: "local"
+10:51:29:933  INFO 35012 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7f1129f7-de03-3cc1-b93c-1c300c4dfd28
+10:51:30:127  INFO 35012 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
+10:51:30:131  INFO 35012 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+10:51:30:131  INFO 35012 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+10:51:30:195  INFO 35012 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+10:51:30:195  INFO 35012 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 716 ms
+10:51:31:744  INFO 35012 --- [main] c.a.c.sentinel.SentinelWebMvcConfigurer  : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+10:51:32:341  INFO 35012 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+10:51:32:941  INFO 35012 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of aa31f3b9-e4aa-426a-8274-22eda471f65f
+10:51:32:961  INFO 35012 --- [main] org.reflections.Reflections              : Reflections took 12 ms to scan 1 urls, producing 3 keys and 6 values 
+10:51:32:972  INFO 35012 --- [main] org.reflections.Reflections              : Reflections took 6 ms to scan 1 urls, producing 4 keys and 9 values 
+10:51:32:977  INFO 35012 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 3 keys and 10 values 
+10:51:32:978  WARN 35012 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+10:51:32:981  INFO 35012 --- [main] org.reflections.Reflections              : Reflections took 3 ms to scan 1 urls, producing 1 keys and 5 values 
+10:51:32:986  INFO 35012 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 1 keys and 7 values 
+10:51:32:991  INFO 35012 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 1 urls, producing 2 keys and 8 values 
+10:51:32:991  WARN 35012 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+10:51:32:991  INFO 35012 --- [main] com.alibaba.nacos.common.remote.client   : [aa31f3b9-e4aa-426a-8274-22eda471f65f] RpcClient init label, labels = {module=naming, source=sdk}
+10:51:32:993  INFO 35012 --- [main] com.alibaba.nacos.common.remote.client   : [aa31f3b9-e4aa-426a-8274-22eda471f65f] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+10:51:32:993  INFO 35012 --- [main] com.alibaba.nacos.common.remote.client   : [aa31f3b9-e4aa-426a-8274-22eda471f65f] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+10:51:32:993  INFO 35012 --- [main] com.alibaba.nacos.common.remote.client   : [aa31f3b9-e4aa-426a-8274-22eda471f65f] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+10:51:32:994  INFO 35012 --- [main] com.alibaba.nacos.common.remote.client   : [aa31f3b9-e4aa-426a-8274-22eda471f65f] Try to connect to server on start up, server: {serverIp = '192.168.200.128', server main port = 8848}
+10:51:34:439  INFO 35012 --- [main] com.alibaba.nacos.common.remote.client   : [aa31f3b9-e4aa-426a-8274-22eda471f65f] Success to connect to server [192.168.200.128:8848] on start up, connectionId = 1722010023666_192.168.200.1_12864
+10:51:34:440  INFO 35012 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [aa31f3b9-e4aa-426a-8274-22eda471f65f] Notify connected event to listeners.
+10:51:34:440  INFO 35012 --- [main] com.alibaba.nacos.common.remote.client   : [aa31f3b9-e4aa-426a-8274-22eda471f65f] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+10:51:34:441  INFO 35012 --- [main] com.alibaba.nacos.common.remote.client   : [aa31f3b9-e4aa-426a-8274-22eda471f65f] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$975/0x000000080078d440
+10:51:34:464  INFO 35012 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8084 (http) with context path ''
+10:51:34:470  INFO 35012 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP user-service 10.196.122.166:8084 register finished
+10:51:34:942  INFO 35012 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+10:51:34:944  INFO 35012 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+10:51:34:954  INFO 35012 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+10:51:34:969  INFO 35012 --- [nacos-grpc-client-executor-7] com.alibaba.nacos.common.remote.client   : [aa31f3b9-e4aa-426a-8274-22eda471f65f] Receive server push request, request = NotifySubscriberRequest, requestId = 517
+10:51:34:971  INFO 35012 --- [nacos-grpc-client-executor-7] com.alibaba.nacos.common.remote.client   : [aa31f3b9-e4aa-426a-8274-22eda471f65f] Ack server push request, request = NotifySubscriberRequest, requestId = 517
+10:51:34:997  INFO 35012 --- [main] com.hmall.user.UserApplication           : Started UserApplication in 6.358 seconds (JVM running for 7.11)
+10:54:16:049  INFO 35012 --- [http-nio-8084-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:54:16:049  INFO 35012 --- [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+10:54:16:051  INFO 35012 --- [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+10:54:16:177  INFO 35012 --- [http-nio-8084-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+10:54:16:311  INFO 35012 --- [http-nio-8084-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+10:54:16:316 DEBUG 35012 --- [http-nio-8084-exec-1] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+10:54:16:332 DEBUG 35012 --- [http-nio-8084-exec-1] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 2(Long)
+10:54:16:344 DEBUG 35012 --- [http-nio-8084-exec-1] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 0
+10:54:35:598 DEBUG 35012 --- [http-nio-8084-exec-2] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+10:54:35:599 DEBUG 35012 --- [http-nio-8084-exec-2] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 2(Long)
+10:54:35:600 DEBUG 35012 --- [http-nio-8084-exec-2] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 0
+10:55:15:848 DEBUG 35012 --- [http-nio-8084-exec-3] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+10:55:15:848 DEBUG 35012 --- [http-nio-8084-exec-3] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 2(Long)
+10:55:15:849 DEBUG 35012 --- [http-nio-8084-exec-3] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 0
+10:55:47:687 DEBUG 35012 --- [http-nio-8084-exec-5] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+10:55:47:687 DEBUG 35012 --- [http-nio-8084-exec-5] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 2(Long)
+10:55:47:688 DEBUG 35012 --- [http-nio-8084-exec-5] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 0
+10:56:12:519 DEBUG 35012 --- [http-nio-8084-exec-4] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+10:56:12:520 DEBUG 35012 --- [http-nio-8084-exec-4] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 2(Long)
+10:56:12:520 DEBUG 35012 --- [http-nio-8084-exec-4] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 0
+11:03:02:614 DEBUG 35012 --- [http-nio-8084-exec-7] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+11:03:02:614 DEBUG 35012 --- [http-nio-8084-exec-7] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 2(Long)
+11:03:02:616 DEBUG 35012 --- [http-nio-8084-exec-7] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 0

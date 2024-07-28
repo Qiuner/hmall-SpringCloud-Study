@@ -3,6 +3,10 @@ server:
 spring:
   application:
     name: user-service # 服务名称
+    sentinel:
+      transport:
+        dashboard: localhost:8090 # sentinel的控制台
+      http-method-specify: true # 是否 设置请求方式作为资源名称
   profiles:
     active: dev
   datasource:
@@ -48,3 +52,8 @@ hm:
     alias: hmall
     password: hmall123
     tokenTTL: 30m
+feign:
+  okhttp:
+    enabled: true # 开启OKHttp连接池支持
+  sentinel:
+    enabled: true # 开启Sentinel支持
