@@ -1,5 +1,6 @@
 package com.hmall.api.config;
 
+import com.hmall.api.client.fallback.CartClientFallback;
 import com.hmall.api.client.fallback.ItemClientFallback;
 import com.hmall.common.utils.UserContext;
 import feign.Logger;
@@ -34,8 +35,14 @@ public class DefaultFeignConfig {
         };
     }
 
+    // 商品服务的
     @Bean
     public ItemClientFallback itemClientFallback() {
         return new ItemClientFallback();
     }
+    //购物车服务的
+    public CartClientFallback cartClientFallback() {
+        return  new CartClientFallback();
+    }
+
 }

@@ -11,3 +11,9 @@ hm:
     package: com.hmall.item.controller
   db:
     database: hm-item
+spring:
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8090 # sentinel的控制台
+      http-method-specify: true # 是否 设置请求方式作为资源名称
